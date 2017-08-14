@@ -1,6 +1,6 @@
 <template>
   <div id="banner-app">
-    <img class="cross" src="../assets/images/cross.svg">
+    <button v-on:click="closeBanner"><img class="cross" src="../assets/images/cross.svg"></button>
     <div class="wrapper">
       <img src="../assets/images/2-iphones.png">
       <div class="right">
@@ -18,7 +18,12 @@ export default {
   name: 'banner-app',
   computed: { },
   components: { },
-  methods: { }
+  methods: {
+    closeBanner () {
+      const banner = document.getElementById('banner-app')
+      banner.classList.add('invisible')
+    }
+  }
 }
 </script>
 
