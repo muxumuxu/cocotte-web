@@ -1,7 +1,7 @@
 <template>
   <div id="landing-page">
     <h1>Hello</h1>
-    </landing-header>
+    <landing-header></landing-header>
   </div>
 </template>
 
