@@ -1,12 +1,12 @@
 <template>
-  <div id="header">
+  <div id="landing-header">
     <h2>Coucou</h2>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'header',
+  name: 'landing-header',
   computed: { },
   components: { },
   methods: { }

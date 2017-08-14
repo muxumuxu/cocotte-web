@@ -1,16 +1,16 @@
 <template>
   <div id="landing-page">
     <h1>Hello</h1>
-    </header>
+    </landing-header>
   </div>
 </template>
 
 <script>
-import Header from '@/components/Header'
+import LandingHeader from '@/components/LandingHeader'
 
 export default {
   computed: { },
-  components: { Header },
+  components: { LandingHeader },
   methods: {
   }
 }
