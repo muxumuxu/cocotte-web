@@ -7,8 +7,10 @@
       </div>
       <img src="../assets/images/app-store-badge.svg">
     </header>
-    <h1>{{$t('title')}}</h1>
-    <input type="search">
+    <div class="wrapper">
+      <h1>{{$t('title')}}</h1>
+      <input type="search">
+    </div>
   </div>
 </template>
 
