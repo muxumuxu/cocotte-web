@@ -1,17 +1,11 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import categories from './modules/categories'
 
 Vue.use(Vuex)
 
-const state = {
-  foods: [],
-  search: '',
-  searchResults: []
-}
-
-const mutations = {}
-
 export default new Vuex.Store({
-  state,
-  mutations
+  modules: {
+    categories
+  }
 })
