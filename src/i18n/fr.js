@@ -8,5 +8,12 @@ export default {
       input_text: 'N° de tel mobile...',
       input_submit: 'Envoyer'
     }
+  },
+  footer: {
+    about: 'À propos',
+    press: 'Kit presse',
+    team: 'Contacter l\'équipe',
+    with_love: 'Fait avec amour par l’équipe de ',
+    muxu: 'Muxu.Muxu'
   }
 }
