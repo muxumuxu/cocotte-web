@@ -1,7 +1,7 @@
 <template>
   <div id="category-list">
     <div class="wrapper">
-      <category-item class="item" v-for="category in categories" :imageSource="categoryIcon(category)" :categoryTitle="category.name" />
+      <category-item class="item" v-for="category in categories" :key="category.name" :imageSource="categoryIcon(category)" :categoryTitle="category.name" />
     </div>
   </div>
 </template>

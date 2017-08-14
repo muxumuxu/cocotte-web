@@ -4,10 +4,10 @@
     <div class="wrapper">
       <img src="../assets/images/2-iphones.png">
       <div class="right">
-        <h2>{{$t('bannerapp.title')}}</h2>
-        <p>Recevoir par SMS le lien de téléchargement</p>
-        <input type="text" placeholder="N° de tel mobile...">
-        <input type="submit" value="Envoyer">
+        <h2>{{$t('banner_app.title')}}</h2>
+        <p>{{$t('banner_app.get_app')}}</p>
+        <input type="text" :placeholder="$t('banner_app.form.input_text')">
+        <input type="submit" :value="$t('banner_app.form.input_submit')">
       </div>
     </div>
   </div>
