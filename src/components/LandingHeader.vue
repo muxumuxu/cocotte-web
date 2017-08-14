@@ -3,11 +3,11 @@
     <header>
       <div class="logo">
         <img src="../assets/images/logo.svg">
-        <span>cocotte</span>
+        <span>{{$t('brand')}}</span>
       </div>
       <img src="../assets/images/app-store-badge.svg">
     </header>
-    <h1>Quels aliments peut-on manger pendant la grossesse ?</h1>
+    <h1>{{$t('title')}}</h1>
     <input type="search">
   </div>
 </template>
