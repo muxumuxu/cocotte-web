@@ -1,13 +1,15 @@
 <template>
   <div id="app">
     <router-view />
+    <landing-footer />
   </div>
 </template>
 
 <script>
+import LandingFooter from '@/components/LandingFooter'
 export default {
   name: 'app',
-  components: { }
+  components: { LandingFooter }
 }
 </script>
 
