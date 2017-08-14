@@ -116,6 +116,10 @@ input[type=submit] {
   }
 }
 
+.invisible {
+	display: none;
+}
+
 .wrapper {
 	width: 800px;
 	margin: 0 auto;
@@ -126,8 +130,10 @@ input[type=submit] {
 	padding: 20px;
 	height: 195px;
 	overflow: hidden;
-	img.cross {
+	button {
 		float: right;
+		border: none;
+		background: transparent;
 		cursor: pointer;
 	}
 	.wrapper {
