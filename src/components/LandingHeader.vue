@@ -1,6 +1,14 @@
 <template>
   <div id="landing-header">
-    <h2>Coucou</h2>
+    <header>
+      <div class="logo">
+        <img src="../assets/images/logo.svg">
+        <span>cocotte</span>
+      </div>
+      <img src="../assets/images/app-store-badge.svg">
+    </header>
+    <h1>Quels aliments peut-on manger pendant la grossesse ?</h1>
+    <input type="search">
   </div>
 </template>
 

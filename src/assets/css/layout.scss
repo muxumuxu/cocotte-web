@@ -1,0 +1,68 @@
+@font-face {
+	font-family: 'Radikal';
+	src: url('/fonts/Radikal-Medium.eot');
+	src: url('/fonts/Radikal-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/fonts/Radikal-Medium.woff') format('woff'),
+		url('/fonts/Radikal-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+#landing-header {
+  background: #000000 url("assets/images/header-background.png") no-repeat;
+  background-size: cover;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  span {
+    font-family: 'Radikal';
+    color: white;
+    font-size: 27px;
+    font-weight: 500;
+  }
+}
+
+h1 {
+  width: 345px;
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+  margin: 35px auto 0;
+  text-align: center;
+  line-height: 26px;
+}
+
+input[type=search] {
+  width: 585px;
+  border: 0;
+  border-radius: 3px;
+  display: block;
+  margin: 90px auto 0;
+  padding: 10px 0 12px 40px;
+  font-size: 18px;
+  letter-spacing: -0.2px;
+  background: white url("assets/images/search-icon.svg") no-repeat;
+  background-position: 15px 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 10px;
+  }
+}
