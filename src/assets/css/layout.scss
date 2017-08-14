@@ -46,18 +46,60 @@ h1 {
   line-height: 26px;
 }
 
-input[type=search] {
-  width: 585px;
-  border: 0;
+h2 {
+	color: white;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 13px;
+	opacity: 0.6;
+	color: white;
+	font-weight: bold;
+}
+
+input {
+	font-family: "Arial", sans-serif;
+	border: 0;
   border-radius: 3px;
+}
+
+input[type=search] {
+  width: 100%;
   display: block;
   margin: 90px auto 0;
-  padding: 10px 0 12px 40px;
+  padding: 10px 0 11px 40px;
   font-size: 18px;
   letter-spacing: -0.2px;
   background: white url("assets/images/search-icon.svg") no-repeat;
-  background-position: 15px 16px;
+  background-position: 15px 15px;
 	box-shadow: 0 2px 14px 0 rgba(0,0,0,0.63), 0 0 4px 0 rgba(0,0,0,0.14);
+}
+
+input[type=text] {
+	padding: 7px 15px;
+	font-size: 16px;
+}
+
+input[type=text]::placeholder {
+	opacity: 0.5;
+	font-weight: bold;
+	color: black;
+}
+
+input[type=submit] {
+	background: #FF0079;
+	color: white;
+	font-weight: bold;
+	padding: 7px 15px;
+	font-size: 16px;
+	transition: opacity .3s;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.7;
+	}
 }
 
 .logo {
@@ -66,4 +108,35 @@ input[type=search] {
   img {
     margin-right: 10px;
   }
+}
+
+.wrapper {
+	width: 800px;
+	margin: 0 auto;
+}
+
+#banner-app {
+	background: #616161;
+	padding: 20px;
+	height: 195px;
+	overflow: hidden;
+	img.cross {
+		float: right;
+		cursor: pointer;
+	}
+	.wrapper {
+		display: flex;
+		img {
+			width: 194px;
+			height: 331px;
+			position: relative;
+			bottom: -5px;
+		}
+		.right {
+			margin: 20px 0 0 25px;
+			p {
+				margin: 20px 0 5px;
+			}
+		}
+	}
 }
