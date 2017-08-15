@@ -82,7 +82,7 @@ input {
 }
 
 input[type=text] {
-	padding: 7px 15px;
+	padding: 8px 15px;
 	font-size: 16px;
 }
 
@@ -159,7 +159,7 @@ input[type=submit] {
 		opacity: 0.6;
 		color: white;
 		font-weight: bold;
-		margin: 20px 0 5px;
+		margin: 20px 0 10px;
 	}
 }
 
@@ -342,10 +342,20 @@ input[type=submit] {
 		cursor: pointer;
 	}
 	.wrapper {
+		display: flex;
+		margin-top: 15%;
 		img {
 			width: 166px;
 			height: 302px;
-			margin-top: 30%;
+		}
+		#sms-form {
+			margin-top: 80px;
+			h2, p {
+				color: black;
+			}
+			input[type=text] {
+				background: #EFEFEF;
+			}
 		}
 	}
 }

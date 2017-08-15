@@ -3,7 +3,7 @@
     <button v-on:click="closeBanner"><img class="cross" src="../../assets/images/white-cross.svg"></button>
     <div class="wrapper">
       <img src="../../assets/images/2-iphones.png">
-      <sms-form />
+      <sms-form :formTitle="$t('banner_app.title')" :formSubtitle="$t('banner_app.subtitle')" />
     </div>
   </div>
 </template>
