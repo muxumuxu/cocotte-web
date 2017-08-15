@@ -1,12 +1,16 @@
-<template lang="html">
-
+<template>
+  <div id="category-page">
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'category-page'
+  name: 'category-page',
+  computed: { },
+  components: { },
+  methods: { }
 }
 </script>
 
-<style lang="css">
+<style>
 </style>

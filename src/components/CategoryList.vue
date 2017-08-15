@@ -1,7 +1,7 @@
 <template>
   <div id="category-list">
     <div class="wrapper">
-      <category-item class="item" v-for="category in categories" :key="category.name" :imageSource="categoryIcon(category)" :categoryTitle="category.name" />
+      <router-link v-for="category in categories" :to="`/categories/${category.id}`"><category-item class="item" :key="category.name" :imageSource="categoryIcon(category)" :categoryTitle="category.name" /></router-link>
     </div>
   </div>
 </template>

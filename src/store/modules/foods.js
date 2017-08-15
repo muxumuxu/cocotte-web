@@ -4,7 +4,8 @@ const getters = {
 
 const state = {
   foods: [
-    { name: 'Biche', status: 'authorized', category_id: 4 },
+    { name: 'Jus de fruit', status: 'authorized', category_id: 5 },
+    { name: 'Café', status: 'avoid', category_id: 5 },
     { name: 'Bière', status: 'forbidden', category_id: 5 }
   ]
 }
