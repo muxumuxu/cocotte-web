@@ -238,6 +238,7 @@ input[type=submit] {
 }
 
 #category-header {
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.21);
 	header {
 		padding: 20px 20px 15px;
 		span {
@@ -253,9 +254,6 @@ input[type=submit] {
 		  background-position: 15px 15px;
 		}
 	}
-}
-
-#category-foods {
 	.wrapper {
 		h1 {
 			font-size: 32px;
@@ -304,6 +302,11 @@ input[type=submit] {
 				}
 			}
 		}
+	}
+}
+
+#category-foods {
+	.wrapper {
 	}
 }
 
