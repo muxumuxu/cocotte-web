@@ -14,10 +14,11 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import FoodItem from '@/components/FoodItem'
 export default {
   name: 'category-foods',
   computed: mapGetters({ categories: 'categories', foods: 'foods' }),
-  components: { },
+  components: { FoodItem },
   methods: { }
 }
 </script>
