@@ -13,7 +13,7 @@
       </a>
     </header>
     <div class="wrapper">
-      <h1>{{$t('category.title')}} <span>Boissons</span></h1>
+      <h1>{{$t('category.title')}} <span>{{ categoryName }}</span></h1>
       <category-filters v-if="showFilters" />
     </div>
   </div>
@@ -23,7 +23,7 @@
 import CategoryFilters from '@/components/category/CategoryFilters'
 export default {
   name: 'category-header',
-  props: ['showFilters'],
+  props: ['showFilters', 'categoryName'],
   components: { CategoryFilters },
   methods: { }
 }
