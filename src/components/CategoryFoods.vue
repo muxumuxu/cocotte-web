@@ -4,8 +4,8 @@
       <h1>Catégorie <span>Boissons</span></h1>
       <div class="filters">
         <button>Tous</button>
-        <button>Autorisés</button>
-        <button>À éviter</button>
+        <button>Autorisé</button>
+        <button>Faire attention</button>
         <button>Dangereux</button>
       </div>
     </div>

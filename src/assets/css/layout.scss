@@ -268,6 +268,21 @@ input[type=submit] {
 				margin-left: 5px;
 			}
 		}
+		.filters {
+			margin-top: 15px;
+			button {
+				border: 0;
+				opacity: 0.3;
+				background: transparent;
+				font-size: 16px;
+				padding: 10px;
+				cursor: pointer;
+				&:active {
+					opacity: 1;
+					border-bottom: 2px solid #FF0079;
+				}
+			}
+		}
 	}
 }
 
