@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import LandingHeader from '@/components/LandingHeader'
-import BannerApp from '@/components/BannerApp'
-import CategoryList from '@/components/CategoryList'
+import LandingHeader from '@/components/landing/LandingHeader'
+import BannerApp from '@/components/common/BannerApp'
+import CategoryList from '@/components/category/CategoryList'
 
 export default {
   computed: { },

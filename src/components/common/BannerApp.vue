@@ -1,8 +1,8 @@
 <template>
   <div id="banner-app">
-    <button v-on:click="closeBanner"><img class="cross" src="../assets/images/cross.svg"></button>
+    <button v-on:click="closeBanner"><img class="cross" src="../../assets/images/cross.svg"></button>
     <div class="wrapper">
-      <img src="../assets/images/2-iphones.png">
+      <img src="../../assets/images/2-iphones.png">
       <div class="right">
         <h2>{{$t('banner_app.title')}}</h2>
         <p>{{$t('banner_app.get_app')}}</p>

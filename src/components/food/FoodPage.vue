@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import CategoryHeader from '@/components/CategoryHeader'
-import FoodDetails from '@/components/FoodDetails'
-import BannerApp from '@/components/BannerApp'
+import CategoryHeader from '@/components/category/CategoryHeader'
+import FoodDetails from '@/components/food/FoodDetails'
+import BannerApp from '@/components/common/BannerApp'
 export default {
   name: 'food-page',
   components: { CategoryHeader, FoodDetails, BannerApp },

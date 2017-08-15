@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import LandingFooter from '@/components/LandingFooter'
+import LandingFooter from '@/components/landing/LandingFooter'
 export default {
   name: 'app',
   components: { LandingFooter }

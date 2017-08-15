@@ -8,7 +8,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
-import CategoryItem from '@/components/CategoryItem'
+import CategoryItem from '@/components/category/CategoryItem'
 import DairyImage from '@/assets/images/dairy.svg'
 import FruitsVegeImage from '@/assets/images/fruits_vege.svg'
 import FishSeafoodImage from '@/assets/images/fish_seafood.svg'

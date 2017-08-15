@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import LandingPage from '@/components/LandingPage'
-import AboutPage from '@/components/AboutPage'
-import CategoryPage from '@/components/CategoryPage'
-import FoodPage from '@/components/FoodPage'
+import LandingPage from '@/components/landing/LandingPage'
+import AboutPage from '@/components/pages/AboutPage'
+import CategoryPage from '@/components/category/CategoryPage'
+import FoodPage from '@/components/food/FoodPage'
 
 Vue.use(Router)
 
