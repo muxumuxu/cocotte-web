@@ -9,7 +9,7 @@
     </header>
     <div class="wrapper">
       <h1>{{$t('title')}}</h1>
-      <input type="search">
+      <input type="search" autofocus>
     </div>
   </div>
 </template>
