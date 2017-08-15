@@ -10,7 +10,14 @@ export default {
     }
   },
   category: {
-    input_search: 'Rechercher un aliment'
+    input_search: 'Rechercher un aliment',
+    title: 'Catégorie',
+    filters: {
+      all: 'Tous',
+      authorised: 'Autorisé',
+      careful: 'Faire attention',
+      forbidden: 'Dangereux'
+    }
   },
   footer: {
     about: 'À propos',
