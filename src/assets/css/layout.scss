@@ -261,6 +261,7 @@ input[type=submit] {
 			letter-spacing: -0.34px;
 			margin: 0;
 			text-align: left;
+			padding-bottom: 15px;
 			span {
 				opacity: 0.3;
 				margin-left: 5px;
@@ -276,7 +277,7 @@ input[type=submit] {
 		opacity: 0.3;
 		background: transparent;
 		font-size: 16px;
-		padding: 10px;
+		padding: 0 10px 10px;
 		cursor: pointer;
 		&:active {
 			opacity: 1;
@@ -284,23 +285,23 @@ input[type=submit] {
 		}
 		&.authorised {
 			padding-left: 35px;
-			background: url("assets/images/grey-authorised.svg") no-repeat 10px 10px;
+			background: url("assets/images/grey-authorised.svg") no-repeat 10px 0px;
 			&:active {
-				background: url("assets/images/authorised.svg") no-repeat 10px 10px;
+				background: url("assets/images/authorised.svg") no-repeat 10px 0px;
 			}
 		}
 		&.careful {
 			padding-left: 35px;
-			background: url("assets/images/grey-careful.svg") no-repeat 10px 10px;
+			background: url("assets/images/grey-careful.svg") no-repeat 10px 0px;
 			&:active {
-				background: url("assets/images/careful.svg") no-repeat 10px 10px;
+				background: url("assets/images/careful.svg") no-repeat 10px 0px;
 			}
 		}
 		&.forbidden {
 			padding-left: 35px;
-			background: url("assets/images/grey-forbidden.svg") no-repeat 10px 10px;
+			background: url("assets/images/grey-forbidden.svg") no-repeat 10px 0px;
 			&:active {
-				background: url("assets/images/forbidden.svg") no-repeat 10px 10px;
+				background: url("assets/images/forbidden.svg") no-repeat 10px 0px;
 			}
 		}
 	}
