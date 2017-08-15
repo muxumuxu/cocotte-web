@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Combined Shape</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="categorie" transform="translate(-750.000000, -134.000000)" fill="#000000">
+            <g id="hero">
+                <g id="tabs" transform="translate(428.000000, 134.000000)">
+                    <g id="segmented" transform="translate(15.000000, 0.000000)">
+                        <path d="M307,10 C307,4.4771525 311.475938,0 317,0 C322.522847,0 327,4.47593818 327,10 C327,15.5228475 322.524062,20 317,20 C311.477153,20 307,15.5240618 307,10 Z M311,10 C311,10.5561352 311.448823,11 312.002473,11 L321.997527,11 C322.544239,11 323,10.5522847 323,10 C323,9.44386482 322.551177,9 321.997527,9 L312.002473,9 C311.455761,9 311,9.44771525 311,10 Z" id="Combined-Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

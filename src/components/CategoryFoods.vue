@@ -3,10 +3,10 @@
     <div class="wrapper">
       <h1>Catégorie <span>Boissons</span></h1>
       <div class="filters">
-        <button>Tous</button>
-        <button>Autorisé</button>
-        <button>Faire attention</button>
-        <button>Dangereux</button>
+        <button class="all active">Tous</button>
+        <button class="authorised">Autorisé</button>
+        <button class="careful">Faire attention</button>
+        <button class="forbidden">Dangereux</button>
       </div>
     </div>
   </div>

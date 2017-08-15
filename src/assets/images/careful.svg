@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="18px" viewBox="0 0 22 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="categorie" transform="translate(-439.000000, -358.000000)" fill="#FDAE00">
+            <g id="items" transform="translate(439.000000, 187.000000)">
+                <g id="item" transform="translate(0.000000, 170.000000)">
+                    <path d="M8.91215584,2.26073814 C10.0647634,0.375790476 11.9377183,0.382673388 13.0861171,2.26073814 L20.6233785,14.5870003 C21.775986,16.471948 20.9113309,18 18.7105107,18 L3.28776227,18 C1.07870699,18 0.226495672,16.4650651 1.37489449,14.5870003 L8.91215584,2.26073814 Z M10,6.00292933 L10,10.9970707 C10,11.5621186 10.4477153,12 11,12 C11.5561352,12 12,11.5509732 12,10.9970707 L12,6.00292933 C12,5.43788135 11.5522847,5 11,5 C10.4438648,5 10,5.44902676 10,6.00292933 Z M11,15 C11.5522847,15 12,14.5522847 12,14 C12,13.4477153 11.5522847,13 11,13 C10.4477153,13 10,13.4477153 10,14 C10,14.5522847 10.4477153,15 11,15 Z" id="Combined-Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
