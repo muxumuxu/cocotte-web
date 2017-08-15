@@ -14,20 +14,16 @@
     </header>
     <div class="wrapper">
       <h1>{{$t('category.title')}} <span>Boissons</span></h1>
-      <div class="filters">
-        <button class="all active">{{$t('category.filters.all')}}</button>
-        <button class="authorised">{{$t('category.filters.authorised')}}</button>
-        <button class="careful">{{$t('category.filters.careful')}}</button>
-        <button class="forbidden">{{$t('category.filters.forbidden')}}</button>
-      </div>
+      <category-filters />
     </div>
   </div>
 </template>
 
 <script>
+import CategoryFilters from '@/components/CategoryFilters'
 export default {
   name: 'category-header',
-  components: { },
+  components: { CategoryFilters },
   methods: { }
 }
 </script>

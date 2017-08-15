@@ -266,40 +266,41 @@ input[type=submit] {
 				margin-left: 5px;
 			}
 		}
-		.filters {
-			margin-top: 15px;
-			button {
-				border: 0;
-				opacity: 0.3;
-				background: transparent;
-				font-size: 16px;
-				padding: 10px;
-				cursor: pointer;
-				&:active {
-					opacity: 1;
-					border-bottom: 2px solid #FF0079;
-				}
-				&.authorised {
-					padding-left: 35px;
-					background: url("assets/images/grey-authorised.svg") no-repeat 10px 10px;
-					&:active {
-						background: url("assets/images/authorised.svg") no-repeat 10px 10px;
-					}
-				}
-				&.careful {
-					padding-left: 35px;
-					background: url("assets/images/grey-careful.svg") no-repeat 10px 10px;
-					&:active {
-						background: url("assets/images/careful.svg") no-repeat 10px 10px;
-					}
-				}
-				&.forbidden {
-					padding-left: 35px;
-					background: url("assets/images/grey-forbidden.svg") no-repeat 10px 10px;
-					&:active {
-						background: url("assets/images/forbidden.svg") no-repeat 10px 10px;
-					}
-				}
+	}
+}
+
+#category-filters {
+	margin-top: 15px;
+	button {
+		border: 0;
+		opacity: 0.3;
+		background: transparent;
+		font-size: 16px;
+		padding: 10px;
+		cursor: pointer;
+		&:active {
+			opacity: 1;
+			border-bottom: 2px solid #FF0079;
+		}
+		&.authorised {
+			padding-left: 35px;
+			background: url("assets/images/grey-authorised.svg") no-repeat 10px 10px;
+			&:active {
+				background: url("assets/images/authorised.svg") no-repeat 10px 10px;
+			}
+		}
+		&.careful {
+			padding-left: 35px;
+			background: url("assets/images/grey-careful.svg") no-repeat 10px 10px;
+			&:active {
+				background: url("assets/images/careful.svg") no-repeat 10px 10px;
+			}
+		}
+		&.forbidden {
+			padding-left: 35px;
+			background: url("assets/images/grey-forbidden.svg") no-repeat 10px 10px;
+			&:active {
+				background: url("assets/images/forbidden.svg") no-repeat 10px 10px;
 			}
 		}
 	}
@@ -310,7 +311,7 @@ input[type=submit] {
 	}
 }
 
-#category-page {
+#category-page, #food-page {
 	#banner-app {
 		position: fixed;
 		bottom: 49px;
