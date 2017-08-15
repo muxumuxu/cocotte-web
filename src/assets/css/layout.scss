@@ -280,7 +280,7 @@ input[type=submit] {
 		cursor: pointer;
 		&:active {
 			opacity: 1;
-			border-bottom: 2px solid #FF0079;
+			box-shadow: 0 -2px 0 0 #FF0079 inset;
 		}
 		&.authorised {
 			padding-left: 35px;
