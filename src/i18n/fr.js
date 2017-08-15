@@ -9,6 +9,9 @@ export default {
       input_submit: 'Envoyer'
     }
   },
+  category: {
+    input_search: 'Rechercher un aliment'
+  },
   footer: {
     about: 'À propos',
     press: 'Kit presse',

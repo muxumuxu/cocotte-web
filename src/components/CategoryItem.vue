@@ -1,6 +1,6 @@
 <template>
   <div id="category-item">
-    <img v-if="imageSource" :src="imageSource">
+    <img :src="imageSource">
     <h3>{{categoryTitle}}</h3>
   </div>
 </template>

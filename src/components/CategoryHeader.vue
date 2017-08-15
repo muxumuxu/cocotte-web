@@ -7,7 +7,7 @@
             <span>{{$t('brand')}}</span>
           </div>
         </router-link>
-      <input type="search" placeholder="Rechercher un aliment" autofocus>
+      <input type="search" :placeholder="$t('category.input_search')" autofocus>
       <a href="https://itunes.apple.com/fr/app/coach-nourriture-enceinte/id1148406816?&mt=8" target="_blank">
         <img src="../assets/images/app-store-badge.svg">
       </a>
@@ -16,10 +16,8 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 export default {
   name: 'category-header',
-  computed: mapGetters({ categories: 'categories' }),
   components: { },
   methods: { }
 }

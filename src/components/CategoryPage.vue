@@ -1,18 +1,18 @@
 <template>
   <div id="category-page">
     <category-header />
+    <category-foods />
     <banner-app />
   </div>
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
 import CategoryHeader from '@/components/CategoryHeader'
+import CategoryFoods from '@/components/CategoryFoods'
 import BannerApp from '@/components/BannerApp'
 export default {
   name: 'category-page',
-  computed: mapGetters({ categories: 'categories', foods: 'foods' }),
-  components: { CategoryHeader, BannerApp },
+  components: { CategoryHeader, CategoryFoods, BannerApp },
   methods: { }
 }
 </script>

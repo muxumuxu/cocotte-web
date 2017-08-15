@@ -72,6 +72,7 @@ h3 {
 	font-size: 13px;
 	color: #8E8E93;
 	font-weight: bold;
+	line-height: 15px;
 }
 
 input {
@@ -127,8 +128,11 @@ input[type=submit] {
 	padding: 20px;
 	height: 195px;
 	overflow: hidden;
+	position: relative;
 	button {
-		float: right;
+		position: absolute;
+		right: 10px;
+		top: 13px;
 		border: none;
 		background: transparent;
 		cursor: pointer;
@@ -155,6 +159,7 @@ input[type=submit] {
 }
 
 #category-list {
+	padding-bottom: 50px;
 	.wrapper {
 		display: flex;
 		flex-direction: row;
@@ -234,7 +239,7 @@ input[type=submit] {
 
 #category-header {
 	header {
-		padding: 20px;
+		padding: 20px 20px 15px;
 		span {
 			color: black;
 		}
@@ -247,5 +252,30 @@ input[type=submit] {
 		  background: #F4F4F4 url("assets/images/search-icon.svg") no-repeat;
 		  background-position: 15px 15px;
 		}
+	}
+}
+
+#category-foods {
+	.wrapper {
+		h1 {
+			font-size: 32px;
+			color: black;
+			letter-spacing: -0.34px;
+			margin: 0;
+			text-align: left;
+			span {
+				opacity: 0.3;
+				margin-left: 5px;
+			}
+		}
+	}
+}
+
+#category-page {
+	#banner-app {
+		position: fixed;
+		bottom: 49px;
+		width: 100%;
+		padding: 20px 0;
 	}
 }
