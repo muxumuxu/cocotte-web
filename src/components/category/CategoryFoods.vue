@@ -1,9 +1,7 @@
 <template>
   <div id="category-foods">
     <div class="wrapper">
-      <ul>
-        <li v-for="food in foods" :key="food.id">{{ food.name }}</li>
-      </ul>
+      <food-item v-for="food in foods" :key="food.id" :food="food" :categoryId="categoryId" />
     </div>
   </div>
 </template>
