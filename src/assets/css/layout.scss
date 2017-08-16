@@ -244,6 +244,9 @@ input[type=submit] {
 
 #category-header {
 	box-shadow: 0 0 2px 0 rgba(0,0,0,0.21);
+	position: fixed;
+	width: 100%;
+	background: white;
 	header {
 		padding: 20px 20px 15px;
 		span {
