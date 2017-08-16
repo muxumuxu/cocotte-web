@@ -29,4 +29,7 @@ export default {
 </script>
 
 <style>
+#category-foods {
+	padding: 190px 0 70px;
+}
 </style>

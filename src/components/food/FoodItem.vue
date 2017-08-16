@@ -26,22 +26,21 @@ export default {
 
 <style lang="scss">
 #food-item {
-  padding: 5px 0 5px 20px;
+  padding: 10px 0 10px 27px;
+  margin-left: 10px;
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
 }
-
-a {
-  text-decoration: none;
-  color: black;
-  font-size: 18px;
-}
-
 .authorised {
- background: url("../../assets/images/authorised.svg") no-repeat;
+ background: url("../../assets/images/authorised.svg") no-repeat 0px 9px;
 }
 .careful {
- background: url("../../assets/images/careful.svg") no-repeat;
+ background: url("../../assets/images/careful.svg") no-repeat 0px 10px;
 }
 .forbidden {
- background: url("../../assets/images/forbidden.svg") no-repeat;
+ background: url("../../assets/images/forbidden.svg") no-repeat 0px 9px;
 }
 </style>
