@@ -1,6 +1,6 @@
 <template>
   <div id="category-page">
-    <category-header :categoryName="category.name" :showFilters="true" />
+    <category-header :categoryName="category.name" :showFilters="true" :categoryId="category.id" />
     <category-foods :categoryId="category.id" />
     <banner-app />
   </div>

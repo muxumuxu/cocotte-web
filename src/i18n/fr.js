@@ -14,8 +14,12 @@ export default {
   },
   category: {
     input_search: 'Rechercher un aliment',
-    title: 'Catégorie',
-    filters: {
+    title: 'Catégorie'
+  },
+  food: {
+    risk: 'Risque',
+    information: 'Information',
+    status: {
       all: 'Tous',
       authorised: 'Autorisé',
       careful: 'Faire attention',

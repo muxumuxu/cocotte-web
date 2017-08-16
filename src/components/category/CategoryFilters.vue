@@ -1,9 +1,9 @@
 <template>
   <div id="category-filters">
-    <button class="all active">{{$t('category.filters.all')}}</button>
-    <button class="authorised">{{$t('category.filters.authorised')}}</button>
-    <button class="careful">{{$t('category.filters.careful')}}</button>
-    <button class="forbidden">{{$t('category.filters.forbidden')}}</button>
+    <button class="all active">{{$t('food.status.all')}}</button>
+    <button class="authorised">{{$t('food.status.authorised')}}</button>
+    <button class="careful">{{$t('food.status.careful')}}</button>
+    <button class="forbidden">{{$t('food.status.forbidden')}}</button>
   </div>
 </template>
 

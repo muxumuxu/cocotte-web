@@ -1,5 +1,5 @@
 <template>
-  <div id="food-item" :class="{ 'authorised': addBackgroundAuthorisedClass, 'careful': addBackgroundCarefulClass, 'forbidden': addBackgroundForbiddenClass }">
+  <div id="food-item" :class="{ 'background-authorised': addBackgroundAuthorisedClass, 'background-careful': addBackgroundCarefulClass, 'background-forbidden': addBackgroundForbiddenClass }">
     <router-link :to="`/categories/${categoryId}/foods/${food.id}`">{{ food.name }}</router-link>
   </div>
 </template>
@@ -34,13 +34,13 @@ export default {
     font-size: 18px;
   }
 }
-.authorised {
+.background-authorised {
  background: url("../../assets/images/authorised.svg") no-repeat 0px 9px;
 }
-.careful {
+.background-careful {
  background: url("../../assets/images/careful.svg") no-repeat 0px 10px;
 }
-.forbidden {
+.background-forbidden {
  background: url("../../assets/images/forbidden.svg") no-repeat 0px 9px;
 }
 </style>

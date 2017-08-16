@@ -1,7 +1,7 @@
 <template>
   <div id="food-page">
-    <category-header :categoryName="category.name" :showFilters="false" />
-    <food-details :food="food" />
+    <category-header :categoryName="category.name" :showFilters="false" :categoryId="$route.params.category_id" />
+    <food-details :food="food" :category="category" />
     <banner-app />
     <download-modal />
   </div>

@@ -13,17 +13,22 @@
       </a>
     </header>
     <div class="wrapper">
-      <h1>{{$t('category.title')}} <span>{{ categoryName }}</span></h1>
-      <category-filters v-if="showFilters" />
+      <router-link :to="`/categories/${categoryId}`">
+        <h1>{{$t('category.title')}} <span>{{ categoryName }}</span></h1>
+        <category-filters v-if="showFilters" />
+      </router-link>
     </div>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import CategoryFilters from '@/components/category/CategoryFilters'
+
 export default {
   name: 'category-header',
-  props: ['showFilters', 'categoryName'],
+  props: ['showFilters', 'categoryName', 'categoryId'],
+  computed: mapGetters({ categories: 'categories' }),
   components: { CategoryFilters },
   methods: { }
 }
@@ -51,6 +56,9 @@ export default {
 		}
 	}
 	.wrapper {
+	  a {
+	    text-decoration: none;
+	  }
 		h1 {
 			font-size: 32px;
 			color: black;
