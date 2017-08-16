@@ -1,7 +1,9 @@
 <template>
   <div id="category-foods">
     <div class="wrapper">
-
+      <ul>
+        <li v-for="food in foods" :key="food.id">{{ food.name }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -9,9 +11,20 @@
 <script>
 import { mapGetters } from 'vuex'
 import FoodItem from '@/components/food/FoodItem'
+
 export default {
   name: 'category-foods',
-  computed: mapGetters({ categories: 'categories', foods: 'foods' }),
+  props: ['categoryId'],
+  computed: {
+    foods () {
+      const categories = this.categories.filter(category => category.id === parseInt(this.categoryId))
+      if (categories.length > 0) {
+        return categories[0].foods
+      }
+      return []
+    },
+    ...mapGetters({ categories: 'categories' })
+  },
   components: { FoodItem },
   methods: { }
 }

@@ -1,19 +1,27 @@
 <template>
   <div id="category-page">
-    <category-header :showFilters="true" />
-    <category-foods />
+    <category-header :categoryName="category.name" :showFilters="true" />
+    <category-foods :categoryId="category.id" />
     <banner-app />
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
 import CategoryHeader from '@/components/category/CategoryHeader'
 import CategoryFoods from '@/components/category/CategoryFoods'
 import BannerApp from '@/components/common/BannerApp'
+
 export default {
   name: 'category-page',
   components: { CategoryHeader, CategoryFoods, BannerApp },
-  methods: { }
+  computed: {
+    category () {
+      const categoryId = parseInt(this.$route.params.id)
+      return this.categories.filter(cat => cat.id === categoryId)[0]
+    },
+    ...mapGetters({ categories: 'categories' })
+  }
 }
 </script>
 
