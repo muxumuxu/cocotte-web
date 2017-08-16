@@ -19,5 +19,41 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+#category-list {
+	padding-bottom: 50px;
+	.wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-top: 20px;
+		a {
+			width: 115px;
+			margin-bottom: 30px;
+			text-decoration: none;
+			img {
+				border-radius: 6px;
+				margin-bottom: 5px;
+				box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
+				&:hover {
+					animation: pulse 1s linear;
+					@keyframes pulse {
+					  from {
+					    transform: scale3d(1, 1, 1);
+					  }
+
+					  50% {
+					    transform: scale3d(1.03, 1.03, 1.03);
+					  }
+
+					  to {
+					    transform: scale3d(1, 1, 1);
+					  }
+					}
+				}
+			}
+		}
+	}
+}
 </style>

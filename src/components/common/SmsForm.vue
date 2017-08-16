@@ -17,5 +17,15 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+#sms-form {
+	margin: 20px 0 0 25px;
+	p {
+		font-size: 13px;
+		opacity: 0.6;
+		color: white;
+		font-weight: bold;
+		margin: 20px 0 10px;
+	}
+}
 </style>

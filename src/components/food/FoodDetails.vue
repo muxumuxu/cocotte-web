@@ -9,6 +9,7 @@
 <script>
 export default {
   name: 'food-details',
+  props: ['food'],
   computed: { },
   components: { },
   methods: {
@@ -22,4 +23,7 @@ export default {
 </script>
 
 <style>
+#food-details {
+  padding-top: 135px;
+}
 </style>

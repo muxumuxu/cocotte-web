@@ -25,5 +25,13 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+#category-page {
+  #banner-app {
+    position: fixed;
+    bottom: 49px;
+    width: 100%;
+    padding: 20px 0;
+  }
+}
 </style>

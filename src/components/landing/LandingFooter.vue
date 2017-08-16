@@ -22,5 +22,46 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+#landing-footer {
+	background: #D8D8D8;
+	padding: 15px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	p {
+		color: #8E8E93;
+		font-size: 13px;
+		padding-right: 20px;
+		a {
+			text-decoration: none;
+			font-weight: bold;
+			color: #8E8E93;
+			&:hover {
+				border-bottom: 1px solid #FF0079;
+			}
+		}
+	}
+	nav {
+		display: flex;
+		align-items: center;
+		padding-left: 20px;
+		a {
+			text-decoration: none;
+			color: #8E8E93;
+			font-size: 13px;
+			font-weight: bold;
+			margin-right: 10px;
+			&:hover {
+				border-bottom: 1px solid #FF0079;
+			}
+		}
+		.social {
+			margin-left: 10px;
+		}
+	}
+}
 </style>

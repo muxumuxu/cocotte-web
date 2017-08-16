@@ -15,5 +15,5 @@ export default {
 
 <style lang="scss">
 @import 'src/assets/css/reset.scss';
-@import 'src/assets/css/layout.scss';
+@import 'src/assets/css/common.scss';
 </style>

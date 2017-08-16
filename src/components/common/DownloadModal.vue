@@ -24,5 +24,38 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+#download-modal {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 1000;
+	top: 0;
+	background: rgba(255,255,255,0.97);
+	button {
+		position: absolute;
+		right: 14px;
+		top: 17px;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+	}
+	.wrapper {
+		display: flex;
+		margin-top: 15%;
+		img {
+			width: 166px;
+			height: 302px;
+		}
+		#sms-form {
+			margin-top: 80px;
+			h2, p {
+				color: black;
+			}
+			input[type=text] {
+				background: #EFEFEF;
+			}
+		}
+	}
+}
 </style>

@@ -23,5 +23,29 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+#banner-app {
+	background: #616161;
+	padding: 20px;
+	height: 195px;
+	overflow: hidden;
+	position: relative;
+	button {
+		position: absolute;
+		right: 10px;
+		top: 13px;
+		border: none;
+		background: transparent;
+		cursor: pointer;
+	}
+	.wrapper {
+		display: flex;
+		img {
+			width: 194px;
+			height: 331px;
+			position: relative;
+			bottom: -5px;
+		}
+	}
+}
 </style>
