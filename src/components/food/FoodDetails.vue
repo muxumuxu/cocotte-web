@@ -10,8 +10,8 @@
       </div>
       <div class="flex">
         <div>
-          <a href="mailto:hello@cocotte-app.com?subject=Commentaire sur l'aliment"><img src="../../assets/images/share.svg"></a>
-          <button v-on:click="openModal"><img src="../../assets/images/flag.svg"></button>
+          <button v-on:click="openModal"><img src="../../assets/images/share.svg"></button>
+          <a href="mailto:hello@cocotte-app.com?subject=Commentaire sur l'aliment"><img src="../../assets/images/flag.svg"></a>
         </div>
         <button class="bookmark" v-on:click="openModal">Ajouter en favoris</button>
       </div>
