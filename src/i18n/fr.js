@@ -24,6 +24,10 @@ export default {
       authorised: 'Autorisé',
       careful: 'Faire attention',
       forbidden: 'Dangereux'
+    },
+    more: {
+      no_risk: 'Aucun.',
+      no_info: 'Aucune.'
     }
   },
   footer: {

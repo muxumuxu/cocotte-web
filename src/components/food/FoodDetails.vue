@@ -17,9 +17,9 @@
       </div>
       <div class="info">
         <h3>{{$t('food.risk')}}</h3>
-        <p v-if="food.risk">{{food.risk.name}}</p>
+        <p>{{displayRisk}}</p>
         <h3>{{$t('food.information')}}</h3>
-        <p v-if="food.info">{{food.info}}</p>
+        <p>{{displayInfo}}</p>
       </div>
     </div>
   </div>
@@ -46,6 +46,18 @@ export default {
         return `${this.$i18n.t('food.status.careful')}`
       }
       return `${this.$i18n.t('food.status.forbidden')}`
+    },
+    displayRisk () {
+      if (this.food.risk) {
+        return this.food.risk.name
+      }
+      return `${this.$i18n.t('food.more.no_risk')}`
+    },
+    displayInfo () {
+      if (this.food.info) {
+        return this.food.info
+      }
+      return `${this.$i18n.t('food.more.no_info')}`
     }
   },
   components: { },
