@@ -34,6 +34,10 @@ export default new Router({
       path: '/404',
       name: 'ErrorPage',
       component: ErrorPage
+    },
+    {
+      path: '*',
+      redirect: '404'
     }
   ]
 })
