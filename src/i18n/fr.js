@@ -30,6 +30,10 @@ export default {
       no_info: 'Aucune.'
     }
   },
+  error_page: {
+    title: 'Cot cot ? Cot cooott ! 🐣',
+    message: 'Oups, la page que vous cherchez n’existe plus.'
+  },
   footer: {
     about: 'À propos',
     press: 'Kit presse',

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="216px" height="216px" viewBox="0 0 216 216" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="404" transform="translate(-428.000000, -178.000000)">
+            <g id="icon" transform="translate(428.000000, 178.000000)">
+                <rect id="bg" fill="#FF0079" x="0" y="0" width="216" height="216" rx="108"></rect>
+                <polygon id="egg" fill="#FFE1EF" points="138.177734 132.851562 128.875 139.003906 149.304688 135.927734"></polygon>
+                <polygon id="egg" fill="#FFE1EF" points="73.6241971 132.851562 68.875 142.851562 79.3046875 137.851562"></polygon>
+                <ellipse id="bg" fill="#000000" opacity="0.206691576" cx="108" cy="136" rx="26" ry="2"></ellipse>
+                <path d="M82.9529631,102.165635 C82.3319772,105.149068 82,107.938711 82,110.332638 C82,124.50833 93.6405965,136 108,136 C122.359403,136 134,124.50833 134,110.332638 C134,107.629419 133.576699,104.421627 132.791965,101 L125.612903,109.504658 L115.548387,101.224864 L108.83871,109.504658 L100.451613,101.224864 L90.3870968,109.504658 L82.9529631,102.165635 Z" id="Combined-Shape" fill="#FFE1EF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -17,6 +17,7 @@
         <h1>{{$t('category.title')}} <span>{{ categoryName }}</span></h1>
         <category-filters v-if="showFilters" />
       </router-link>
+      <h1 v-if="errorMessageTitle">{{errorMessageTitle}}</h1>
     </div>
   </div>
 </template>
@@ -27,7 +28,7 @@ import CategoryFilters from '@/components/category/CategoryFilters'
 
 export default {
   name: 'category-header',
-  props: ['showFilters', 'categoryName', 'categoryId'],
+  props: ['showFilters', 'categoryName', 'categoryId', 'errorMessageTitle'],
   computed: mapGetters({ categories: 'categories' }),
   components: { CategoryFilters },
   methods: { }
