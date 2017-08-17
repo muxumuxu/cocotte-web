@@ -38,6 +38,7 @@ export default {
     bottom: 49px;
     width: 100%;
     padding: 20px 0;
+    background: rgba(97,97,97,0.8);
   }
 }
 </style>

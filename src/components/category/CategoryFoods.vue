@@ -30,6 +30,8 @@ export default {
 
 <style>
 #category-foods {
-	padding: 190px 0 70px;
+  padding-top: 190px;
+	padding-bottom: 70px;
+  overflow-y: auto;
 }
 </style>

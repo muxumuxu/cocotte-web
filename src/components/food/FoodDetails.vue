@@ -74,7 +74,7 @@ export default {
 <style lang="scss">
 #food-details {
   padding-top: 135px;
-  overflow: scroll;
+  overflow-y: auto;
   .flex {
     margin-top: 30px;
     display: flex;
