@@ -13,7 +13,7 @@
       </a>
     </header>
     <div class="wrapper">
-      <router-link :to="`/categories/${categoryId}`">
+      <router-link v-if="categoryName" :to="`/categories/${categoryId}`">
         <h1>{{$t('category.title')}} <span>{{ categoryName }}</span></h1>
         <category-filters v-if="showFilters" />
       </router-link>
@@ -48,7 +48,7 @@ export default {
 		input[type=search] {
 			width: 800px;
 			height: 100%;
-			padding: 11px 0 11px 40px;
+			padding: 11px 15px 11px 40px;
 		  font-size: 18px;
 		  letter-spacing: -0.2px;
 		  background: #F4F4F4 url("../../assets/images/search-icon.svg") no-repeat;

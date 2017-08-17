@@ -4,6 +4,7 @@ import LandingPage from '@/components/landing/LandingPage'
 import AboutPage from '@/components/pages/AboutPage'
 import CategoryPage from '@/components/category/CategoryPage'
 import FoodPage from '@/components/food/FoodPage'
+import ErrorPage from '@/components/pages/ErrorPage'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
       path: '/categories/:category_id/foods/:food_id',
       name: 'FoodPage',
       component: FoodPage
+    },
+    {
+      path: '/404',
+      name: 'ErrorPage',
+      component: ErrorPage
     }
   ]
 })
