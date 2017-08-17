@@ -20,6 +20,7 @@
         <p>{{displayRisk}}</p>
         <h3>{{$t('food.information')}}</h3>
         <p>{{displayInfo}}</p>
+        <a v-if="food.risk && food.risk.url" :href="displayURL" target="_blank">En savoir plus</a>
       </div>
     </div>
   </div>
@@ -58,6 +59,12 @@ export default {
         return this.food.info
       }
       return `${this.$i18n.t('food.more.no_info')}`
+    },
+    displayURL () {
+      if (this.food.risk && this.food.risk.url) {
+        return this.food.risk.url
+      }
+      return ''
     }
   },
   components: { },
@@ -140,6 +147,14 @@ export default {
       opacity: 0.6;
       line-height: 23px;
       margin-top: 2px;
+      font-size: 18px;
+    }
+    a {
+      color: #007CFF;
+      text-decoration: none;
+      display: block;
+      margin-top: 7px;
+      font-size: 18px;
     }
   }
 }
