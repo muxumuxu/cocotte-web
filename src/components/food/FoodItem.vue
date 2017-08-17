@@ -13,10 +13,10 @@ export default {
       return this.food.danger === 'empty'
     },
     addBackgroundCarefulClass () {
-      return this.food.danger === 'avoid'
+      return this.food.danger === 'care'
     },
     addBackgroundForbiddenClass () {
-      return this.food.danger === 'care'
+      return this.food.danger === 'avoid'
     }
   },
   components: { },

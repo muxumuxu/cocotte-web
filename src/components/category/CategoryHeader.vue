@@ -15,7 +15,7 @@
     <div class="wrapper">
       <router-link v-if="categoryName" :to="`/categories/${categoryId}`">
         <h1>{{$t('category.title')}} <span>{{ categoryName }}</span></h1>
-        <category-filters v-if="showFilters" />
+        <category-filters v-if="showFilters" :selectedFilter="selectedFilter" :onFilterChanged="onFilterChanged" />
       </router-link>
       <h1 v-if="errorMessageTitle">{{errorMessageTitle}}</h1>
     </div>
@@ -28,7 +28,28 @@ import CategoryFilters from '@/components/category/CategoryFilters'
 
 export default {
   name: 'category-header',
-  props: ['showFilters', 'categoryName', 'categoryId', 'errorMessageTitle'],
+  props: [{
+    name: 'showFilters',
+    type: String
+  }, {
+    name: 'categoryName',
+    type: String,
+    default: ''
+  }, {
+    name: 'categoryId',
+    type: String
+  }, {
+    name: 'errorMessageTitle',
+    type: String,
+    default: ''
+  }, {
+    name: 'selectedFilter',
+    type: String
+  }, {
+    name: 'onFilterChanged',
+    type: Function,
+    default: () => {}
+  }],
   computed: mapGetters({ categories: 'categories' }),
   components: { CategoryFilters },
   methods: { }

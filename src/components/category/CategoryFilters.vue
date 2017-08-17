@@ -1,9 +1,9 @@
 <template>
   <div id="category-filters">
-    <button class="all active">{{$t('food.status.all')}}</button>
-    <button class="authorised">{{$t('food.status.authorised')}}</button>
-    <button class="careful">{{$t('food.status.careful')}}</button>
-    <button class="forbidden">{{$t('food.status.forbidden')}}</button>
+    <button class="all" :class="{ 'active' : isAll }" v-on:click="changeFilter">{{$t('food.status.all')}}</button>
+    <button class="authorised" :class="{ 'active' : isAuthorized }" v-on:click="changeFilter">{{$t('food.status.authorised')}}</button>
+    <button class="careful" :class="{ 'active' : isCareful }" v-on:click="changeFilter">{{$t('food.status.careful')}}</button>
+    <button class="forbidden" :class="{ 'active' : isForbidden }" v-on:click="changeFilter">{{$t('food.status.forbidden')}}</button>
   </div>
 </template>
 
@@ -11,7 +11,27 @@
 export default {
   name: 'category-filters',
   components: { },
-  methods: { }
+  props: ['selectedFilter'],
+  computed: {
+    isAll () {
+      return this.selectedFilter === 'all'
+    },
+    isAuthorized () {
+      return this.selectedFilter === 'authorised'
+    },
+    isCareful () {
+      return this.selectedFilter === 'careful'
+    },
+    isForbidden () {
+      return this.selectedFilter === 'forbidden'
+    }
+  },
+  methods: {
+    changeFilter (e) {
+      const filter = e.target.classList[0]
+      this.$emit('onFilterChanged', { filter })
+    }
+  }
 }
 </script>
 
@@ -26,28 +46,28 @@ export default {
 		font-weight: bold;
 		padding: 0 10px 10px;
 		cursor: pointer;
-		&:active {
+		&.active {
 			opacity: 1;
 			box-shadow: 0 -2px 0 0 #FF0079 inset;
 		}
 		&.authorised {
 			padding-left: 35px;
 			background: url("../../assets/images/grey-authorised.svg") no-repeat 10px 0px;
-			&:active {
+			&.active {
 				background: url("../../assets/images/authorised.svg") no-repeat 10px 0px;
 			}
 		}
 		&.careful {
 			padding-left: 35px;
 			background: url("../../assets/images/grey-careful.svg") no-repeat 10px 0px;
-			&:active {
+			&.active {
 				background: url("../../assets/images/careful.svg") no-repeat 10px 0px;
 			}
 		}
 		&.forbidden {
 			padding-left: 35px;
 			background: url("../../assets/images/grey-forbidden.svg") no-repeat 10px 0px;
-			&:active {
+			&.active {
 				background: url("../../assets/images/forbidden.svg") no-repeat 10px 0px;
 			}
 		}

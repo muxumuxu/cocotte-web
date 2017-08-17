@@ -35,10 +35,10 @@ export default {
       return this.food.danger === 'empty'
     },
     isCareful () {
-      return this.food.danger === 'avoid'
+      return this.food.danger === 'care'
     },
     isForbidden () {
-      return this.food.danger === 'care'
+      return this.food.danger === 'avoid'
     },
     displayDanger () {
       if (this.isAuthorized) {
