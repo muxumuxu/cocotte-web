@@ -1,7 +1,7 @@
 <template>
   <div id="category-foods">
     <div class="wrapper">
-      <food-item v-for="food in foods" :key="food.id" :food="food" :categoryId="categoryId" />
+      <food-item v-for="food in foods" :key="food.id" :food="food" :category-id="categoryId" />
     </div>
   </div>
 </template>
@@ -12,12 +12,24 @@ import FoodItem from '@/components/food/FoodItem'
 
 export default {
   name: 'category-foods',
-  props: ['categoryId'],
+  props: {
+    categoryId: { type: Number },
+    filterBy: { type: String }
+  },
   computed: {
     foods () {
-      const categories = this.categories.filter(category => category.id === parseInt(this.categoryId))
-      if (categories.length > 0) {
-        return categories[0].foods
+      const matchedCategories = this.categories.filter(category => category.id === this.categoryId)
+      if (matchedCategories.length > 0) {
+        return matchedCategories[0].foods.filter(food => {
+          if (this.filterBy === 'forbidden') {
+            return food.danger === 'avoid'
+          } else if (this.filterBy === 'authorised') {
+            return food.danger === 'empty'
+          } else if (this.filterBy === 'careful') {
+            return food.danger === 'care'
+          }
+          return true
+        })
       }
       return []
     },
