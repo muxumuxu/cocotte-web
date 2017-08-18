@@ -1,12 +1,12 @@
 <template>
   <div id="category-page">
     <category-header
-      :categoryName="category.name"
-      :showFilters="true"
-      :categoryId="category.id"
-      :selectedFilter="selectedFilter"
-      :onFilterChanged="onFilterChanged" />
-    <category-foods :categoryId="category.id" />
+      :category-name="category.name"
+      :show-filters="true"
+      :category-id="category.id"
+      :selected-filter="selectedFilter"
+      :on-filter-changed="onFilterChanged" />
+    <category-foods :category-id="category.id" :filter-by="selectedFilter" />
     <banner-app />
   </div>
 </template>
@@ -16,18 +16,12 @@ import { mapGetters } from 'vuex'
 import CategoryHeader from '@/components/category/CategoryHeader'
 import CategoryFoods from '@/components/category/CategoryFoods'
 import BannerApp from '@/components/common/BannerApp'
-const filterType = {
-  all: 'all',
-  authorised: 'empty',
-  care: 'careful',
-  avoid: 'forbidden'
-}
 
 export default {
   name: 'category-page',
   components: { CategoryHeader, CategoryFoods, BannerApp },
   data () {
-    return { selectedFilter: filterType.all }
+    return { selectedFilter: 'all' }
   },
   computed: {
     category () {
@@ -37,8 +31,8 @@ export default {
     ...mapGetters({ categories: 'categories' })
   },
   methods: {
-    onFilterChanged () {
-      console.log('onFilterChanged')
+    onFilterChanged ({ filter }) {
+      this.selectedFilter = filter
     }
   }
 }

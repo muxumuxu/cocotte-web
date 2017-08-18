@@ -11,25 +11,17 @@
 export default {
   name: 'category-filters',
   components: { },
-  props: ['selectedFilter'],
+  props: ['selectedFilter', 'onFilterChanged'],
   computed: {
-    isAll () {
-      return this.selectedFilter === 'all'
-    },
-    isAuthorized () {
-      return this.selectedFilter === 'authorised'
-    },
-    isCareful () {
-      return this.selectedFilter === 'careful'
-    },
-    isForbidden () {
-      return this.selectedFilter === 'forbidden'
-    }
+    isAll () { return this.selectedFilter === 'all' },
+    isAuthorized () { return this.selectedFilter === 'authorised' },
+    isCareful () { return this.selectedFilter === 'careful' },
+    isForbidden () { return this.selectedFilter === 'forbidden' }
   },
   methods: {
     changeFilter (e) {
       const filter = e.target.classList[0]
-      this.$emit('onFilterChanged', { filter })
+      this.onFilterChanged({ filter })
     }
   }
 }
