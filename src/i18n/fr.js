@@ -26,8 +26,6 @@ export default {
       forbidden: 'Dangereux'
     },
     more: {
-      no_risk: 'Aucun.',
-      no_info: 'Aucune.',
       doctor: 'Toutes ces recommandations sont données à titre indicatif, elles ne peuvent remplacer l\'avis de votre médecin.'
     }
   },

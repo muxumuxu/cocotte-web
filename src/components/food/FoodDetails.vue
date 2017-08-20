@@ -10,18 +10,22 @@
           <img :src="category.coverImage">
         </div>
       </div>
-      <div class="flex">
+      <div class="flex links">
         <div>
           <button v-on:click="openModal"><img src="../../assets/images/share.svg"></button>
           <a href="mailto:hello@cocotte-app.com?subject=Commentaire sur l'aliment"><img src="../../assets/images/flag.svg"></a>
         </div>
         <button class="bookmark" v-on:click="openModal">Ajouter en favoris</button>
       </div>
-      <div class="info">
-        <h3>{{$t('food.risk')}}</h3>
-        <p>{{displayRisk}}</p>
-        <h3>{{$t('food.information')}}</h3>
-        <p>{{displayInfo}}</p>
+      <div class="more">
+        <div v-if="food.risk">
+          <h3>{{$t('food.risk')}}</h3>
+          <p>{{displayRisk}}</p>
+        </div>
+        <div v-if="food.info" class="info">
+          <h3>{{$t('food.information')}}</h3>
+          <p>{{displayInfo}}</p>
+        </div>
         <button v-on:click="openModal">En savoir plus</button>
       </div>
       <p class="notice">{{$t('food.more.doctor')}}</p>
@@ -88,16 +92,10 @@ export default {
       return `${this.$i18n.t('food.status.forbidden')}`
     },
     displayRisk () {
-      if (this.food.risk) {
-        return this.food.risk.name
-      }
-      return `${this.$i18n.t('food.more.no_risk')}`
+      return this.food.risk.name
     },
     displayInfo () {
-      if (this.food.info) {
-        return this.food.info
-      }
-      return `${this.$i18n.t('food.more.no_info')}`
+      return this.food.info
     }
   },
   components: { },
@@ -219,13 +217,15 @@ export default {
       }
     }
   }
-  .info {
+  .links {
+    margin-bottom: 30px;
+  }
+  .more {
     padding-bottom: 25px;
     border-bottom: 1px solid rgba(142,142,147,0.1);
     h3 {
       font-size: 18px;
       font-weight: bold;
-      margin-top: 30px;
     }
     p {
       opacity: 0.6;
@@ -244,6 +244,9 @@ export default {
       font-size: 18px;
       cursor: pointer;
     }
+  }
+  .info {
+    margin-top: 30px;
   }
 }
 </style>
