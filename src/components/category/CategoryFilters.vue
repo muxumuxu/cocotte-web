@@ -42,24 +42,27 @@ export default {
 			opacity: 1;
 			box-shadow: 0 -2px 0 0 #FF0079 inset;
 		}
+    &:hover {
+      opacity: 1;
+    }
 		&.authorised {
 			padding-left: 35px;
 			background: url("../../assets/images/grey-authorised.svg") no-repeat 10px 0px;
-			&.active {
+			&.active, &:hover {
 				background: url("../../assets/images/authorised.svg") no-repeat 10px 0px;
 			}
 		}
 		&.careful {
 			padding-left: 35px;
 			background: url("../../assets/images/grey-careful.svg") no-repeat 10px 0px;
-			&.active {
+			&.active, &:hover {
 				background: url("../../assets/images/careful.svg") no-repeat 10px 0px;
 			}
 		}
 		&.forbidden {
 			padding-left: 35px;
 			background: url("../../assets/images/grey-forbidden.svg") no-repeat 10px 0px;
-			&.active {
+			&.active, &:hover {
 				background: url("../../assets/images/forbidden.svg") no-repeat 10px 0px;
 			}
 		}

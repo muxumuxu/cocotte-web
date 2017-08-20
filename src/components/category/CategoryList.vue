@@ -2,7 +2,10 @@
   <div id="category-list">
     <div class="wrapper">
       <router-link v-for="category in categories" :key="category.id" :to="`/categories/${category.id}`">
-        <category-item class="item" :key="category.name" :imageSource="category.coverImage" :categoryTitle="category.name" />
+        <category-item
+        class="item"
+        :key="category.name"
+        :category="category" />
       </router-link>
     </div>
   </div>
@@ -29,30 +32,9 @@ export default {
 		justify-content: space-between;
 		margin-top: 20px;
 		a {
-			width: 115px;
+		  width: 115px;
 			margin-bottom: 30px;
 			text-decoration: none;
-			img {
-				border-radius: 6px;
-				margin-bottom: 5px;
-				box-shadow: 0 2px 8px 0 rgba(0,0,0,0.15);
-				&:hover {
-					animation: pulse 1s linear;
-					@keyframes pulse {
-					  from {
-					    transform: scale3d(1, 1, 1);
-					  }
-
-					  50% {
-					    transform: scale3d(1.03, 1.03, 1.03);
-					  }
-
-					  to {
-					    transform: scale3d(1, 1, 1);
-					  }
-					}
-				}
-			}
 		}
 	}
 }

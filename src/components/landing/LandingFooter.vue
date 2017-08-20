@@ -9,7 +9,7 @@
         <a href="https://www.instagram.com/cocotteapp/" target="_blank"><img src="../../assets/images/instagram-icon.svg"></a>
       </div>
     </nav>
-    <p>{{$t('footer.with_love')}}<a href="https://www.muxumuxu.com" target="_blank">{{$t('footer.muxu')}}</a></p>
+    <p>{{$t('footer.with_love')}}</p>
   </div>
 </template>
 

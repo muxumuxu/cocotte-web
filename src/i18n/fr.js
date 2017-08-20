@@ -27,7 +27,8 @@ export default {
     },
     more: {
       no_risk: 'Aucun.',
-      no_info: 'Aucune.'
+      no_info: 'Aucune.',
+      doctor: 'Toutes ces recommandations sont données à titre indicatif, elles ne peuvent remplacer l\'avis de votre médecin.'
     }
   },
   error_page: {
@@ -38,7 +39,6 @@ export default {
     about: 'À propos',
     press: 'Kit presse',
     team: 'Contacter l\'équipe',
-    with_love: 'Fait avec amour par l’équipe de ',
-    muxu: 'Muxu.Muxu'
+    with_love: 'Fait avec amour par l’équipe de Muxu.Muxu.'
   }
 }

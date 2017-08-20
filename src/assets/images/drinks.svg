@@ -1,108 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="110px" height="128px" viewBox="0 0 110 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="90px" height="95px" viewBox="0 0 90 95" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
-    <title>bg</title>
+    <title>illustration</title>
     <desc>Created with Sketch.</desc>
     <defs>
-        <rect id="path-1" x="0" y="0" width="110" height="128"></rect>
-        <filter x="-11.8%" y="-8.6%" width="123.6%" height="120.3%" filterUnits="objectBoundingBox" id="filter-3">
-            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="4" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.15 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-        <path d="M0,33.0000383 C0,29.6863086 1.07017517,24.5385971 2.39524916,21.4909269 L10,4 L32,4 L39.6047508,21.4909269 C40.9276104,24.533504 42,29.6946371 42,33.0000383 L42,82.0004714 C42,84.7616348 39.7567461,87 36.9963439,87 L5.00365614,87 C2.24021316,87 0,84.7574344 0,82.0004714 L0,33.0000383 Z M10,0 L32,0 L32,4 L10,4 L10,0 Z" id="path-4"></path>
-        <filter x="-2.4%" y="-1.1%" width="104.8%" height="102.3%" filterUnits="objectBoundingBox" id="filter-6">
+        <path d="M0,33.0000383 C0,29.6863086 1.07017517,24.5385971 2.39524916,21.4909269 L10,4 L32,4 L39.6047508,21.4909269 C40.9276104,24.533504 42,29.6946371 42,33.0000383 L42,82.0004714 C42,84.7616348 39.7567461,87 36.9963439,87 L5.00365614,87 C2.24021316,87 0,84.7574344 0,82.0004714 L0,33.0000383 Z M10,0 L32,0 L32,4 L10,4 L10,0 Z" id="path-1"></path>
+        <filter x="-2.4%" y="-1.1%" width="104.8%" height="102.3%" filterUnits="objectBoundingBox" id="filter-3">
             <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.831372549   0 0 0 0 1  0 0 0 0.174365942 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
-        <path d="M-19.3525907,68.0824381 C-21.4967179,76.0844297 -16.7479805,84.309484 -8.74598898,86.4536112 C-0.743997432,88.5977384 15.2084635,85.9195534 17.3525907,77.9175619 C19.4967179,69.9155703 7.02057392,59.6199636 -0.981417629,57.4758364 C-8.98340918,55.3317093 -17.2084635,60.0804466 -19.3525907,68.0824381 L-19.3525907,68.0824381 Z" id="path-7"></path>
-        <filter x="-8.0%" y="-9.9%" width="116.0%" height="119.9%" filterUnits="objectBoundingBox" id="filter-8">
+        <path d="M-19.3525907,68.0824381 C-21.4967179,76.0844297 -16.7479805,84.309484 -8.74598898,86.4536112 C-0.743997432,88.5977384 15.2084635,85.9195534 17.3525907,77.9175619 C19.4967179,69.9155703 7.02057392,59.6199636 -0.981417629,57.4758364 C-8.98340918,55.3317093 -17.2084635,60.0804466 -19.3525907,68.0824381 L-19.3525907,68.0824381 Z" id="path-4"></path>
+        <filter x="-8.0%" y="-9.9%" width="116.0%" height="119.9%" filterUnits="objectBoundingBox" id="filter-5">
             <feOffset dx="0" dy="-6" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 0.196078431   0 0 0 0 0.831372549   0 0 0 0 1  0 0 0 0.205870697 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
-        <rect id="path-9" x="9" y="0" width="24" height="10" rx="2"></rect>
-        <filter x="-4.2%" y="-10.0%" width="108.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-10">
+        <rect id="path-6" x="9" y="0" width="24" height="10" rx="2"></rect>
+        <filter x="-4.2%" y="-10.0%" width="108.3%" height="120.0%" filterUnits="objectBoundingBox" id="filter-7">
             <feOffset dx="0" dy="-2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
             <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
             <feColorMatrix values="0 0 0 0 1   0 0 0 0 0.498039216   0 0 0 0 0.22745098  0 0 0 0.188434103 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
         </filter>
-        <rect id="path-11" x="0" y="0" width="26" height="62" rx="3"></rect>
-        <path d="M0,9.80234424 C0,8.70173991 0.405553997,7.01772791 0.907661915,6.03742198 L4,0 L24,0 L27.0923381,6.03742198 C27.5936259,7.01612679 28,8.71476917 28,9.80234424 L28,39.9996798 C28,41.6567109 26.6495018,43 25.0035095,43 L2.99649048,43 C1.34157448,43 0,41.6634629 0,39.9996798 L0,9.80234424 Z" id="path-13"></path>
+        <rect id="path-8" x="0" y="0" width="26" height="62" rx="3"></rect>
+        <path d="M0,9.80234424 C0,8.70173991 0.405553997,7.01772791 0.907661915,6.03742198 L4,0 L24,0 L27.0923381,6.03742198 C27.5936259,7.01612679 28,8.71476917 28,9.80234424 L28,39.9996798 C28,41.6567109 26.6495018,43 25.0035095,43 L2.99649048,43 C1.34157448,43 0,41.6634629 0,39.9996798 L0,9.80234424 Z" id="path-10"></path>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="home" transform="translate(-916.000000, -552.000000)">
+        <g id="no-results" transform="translate(-926.000000, -572.000000)">
             <g id="catégories" transform="translate(428.000000, 552.000000)">
                 <g id="item" transform="translate(488.000000, 0.000000)">
                     <g id="illustration">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <g id="bg">
-                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
-                            <use fill="#99D22A" fill-rule="evenodd" xlink:href="#path-1"></use>
-                        </g>
-                        <g id="orang-juice" mask="url(#mask-2)">
-                            <g transform="translate(52.000000, 20.000000)">
-                                <g id="bottle" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, 5.000000)">
-                                    <mask id="mask-5" fill="white">
-                                        <use xlink:href="#path-4"></use>
-                                    </mask>
-                                    <g>
-                                        <use fill="#E4F5FC" fill-rule="evenodd" xlink:href="#path-4"></use>
-                                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-4"></use>
-                                    </g>
-                                    <g id="egg" opacity="0.769999981" mask="url(#mask-5)">
-                                        <use fill="#FCFCFC" fill-rule="evenodd" xlink:href="#path-7"></use>
-                                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
-                                    </g>
+                        <g id="orang-juice" transform="translate(52.000000, 20.000000)">
+                            <g id="bottle" transform="translate(0.000000, 5.000000)">
+                                <mask id="mask-2" fill="white">
+                                    <use xlink:href="#path-1"></use>
+                                </mask>
+                                <g>
+                                    <use fill="#E4F5FC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
                                 </g>
-                                <path d="M4.60869565,26 L4.39524916,26.4909269 C3.07017517,29.5385971 2,34.6872424 2,38.0021239 L2,87.0038017 C2,88.6516882 3.34209804,90 4.99765987,90 L37.0023401,90 C38.6475599,90 40,88.6585563 40,87.0038017 L40,38.0021239 C40,34.6811374 38.9276104,29.533504 37.6047508,26.4909269 L37.3913043,26 L4.60869565,26 Z" id="milk" fill="#FFDA3A" fill-rule="evenodd"></path>
-                                <rect id="Rectangle-12" fill="#FFFFFF" fill-rule="evenodd" x="0" y="39" width="42" height="42"></rect>
-                                <circle id="orange" fill="#FF7F3A" fill-rule="evenodd" cx="21" cy="66" r="8"></circle>
-                                <rect id="Rectangle-13" fill="#88C11A" fill-rule="evenodd" x="9" y="48" width="24" height="4" rx="1"></rect>
-                                <rect id="Rectangle-13" fill="#88C11A" fill-rule="evenodd" x="17" y="54" width="8" height="2" rx="1"></rect>
-                                <g id="cap" fill="none">
-                                    <use fill="#FFDA3A" fill-rule="evenodd" xlink:href="#path-9"></use>
-                                    <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                                <g id="egg" opacity="0.769999981" mask="url(#mask-2)">
+                                    <use fill="#FCFCFC" fill-rule="evenodd" xlink:href="#path-4"></use>
+                                    <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
                                 </g>
-                                <rect id="cap" fill="#E4F5FC" fill-rule="evenodd" x="9" y="11" width="24" height="2" rx="1"></rect>
-                                <rect id="shadow" fill-opacity="0.339645607" fill="#C7D6DC" fill-rule="evenodd" x="10" y="10" width="22" height="1"></rect>
                             </g>
-                        </g>
-                        <rect id="shadow" fill="#84BA18" mask="url(#mask-2)" x="10" y="112" width="90" height="3" rx="1.5"></rect>
-                        <g id="can" mask="url(#mask-2)">
-                            <g transform="translate(16.000000, 50.000000)">
-                                <g id="body" stroke-width="1" fill="none" transform="translate(1.000000, 0.000000)">
-                                    <mask id="mask-12" fill="white">
-                                        <use xlink:href="#path-11"></use>
-                                    </mask>
-                                    <use id="can" fill="#E4F5FC" xlink:href="#path-11"></use>
-                                    <polygon id="can" fill="#6158C4" mask="url(#mask-12)" points="13 31 28 31 28 62 9 62"></polygon>
-                                    <polygon id="can" fill="#6158C4" mask="url(#mask-12)" transform="translate(7.500000, 15.500000) scale(-1, -1) translate(-7.500000, -15.500000) " points="2 0 17 0 17 31 -2 31"></polygon>
-                                    <circle id="can" fill="#FFDA3A" mask="url(#mask-12)" cx="13" cy="31" r="5"></circle>
-                                    <rect id="can" fill="#F64848" mask="url(#mask-12)" x="4" y="20" width="18" height="4" rx="1"></rect>
-                                </g>
-                                <rect id="can" fill="#E4F5FC" x="0" y="0" width="28" height="2" rx="1"></rect>
-                                <rect id="can" fill="#FFFFFF" opacity="0.296466884" x="0" y="0" width="28" height="1" rx="0.5"></rect>
-                                <rect id="shadow" fill="#000000" opacity="0.0362056903" x="1" y="2" width="26" height="1"></rect>
+                            <path d="M4.60869565,26 L4.39524916,26.4909269 C3.07017517,29.5385971 2,34.6872424 2,38.0021239 L2,87.0038017 C2,88.6516882 3.34209804,90 4.99765987,90 L37.0023401,90 C38.6475599,90 40,88.6585563 40,87.0038017 L40,38.0021239 C40,34.6811374 38.9276104,29.533504 37.6047508,26.4909269 L37.3913043,26 L4.60869565,26 Z" id="milk" fill="#FFDA3A"></path>
+                            <rect id="Rectangle-12" fill="#FFFFFF" x="0" y="39" width="42" height="42"></rect>
+                            <circle id="orange" fill="#FF7F3A" cx="21" cy="66" r="8"></circle>
+                            <rect id="Rectangle-13" fill="#88C11A" x="9" y="48" width="24" height="4" rx="1"></rect>
+                            <rect id="Rectangle-13" fill="#88C11A" x="17" y="54" width="8" height="2" rx="1"></rect>
+                            <g id="cap">
+                                <use fill="#FFDA3A" fill-rule="evenodd" xlink:href="#path-6"></use>
+                                <use fill="black" fill-opacity="1" filter="url(#filter-7)" xlink:href="#path-6"></use>
                             </g>
+                            <rect id="cap" fill="#E4F5FC" x="9" y="11" width="24" height="2" rx="1"></rect>
+                            <rect id="shadow" fill-opacity="0.339645607" fill="#C7D6DC" x="10" y="10" width="22" height="1"></rect>
                         </g>
-                        <g id="can" mask="url(#mask-2)">
-                            <g transform="translate(40.000000, 66.000000)">
-                                <g id="body" stroke-width="1" fill="none" transform="translate(0.000000, 2.000000)">
-                                    <mask id="mask-14" fill="white">
-                                        <use xlink:href="#path-13"></use>
-                                    </mask>
-                                    <use id="can" fill="#F64848" xlink:href="#path-13"></use>
-                                    <rect id="Rectangle-11" fill="#FF6262" mask="url(#mask-14)" x="0" y="-1" width="28" height="9"></rect>
-                                    <rect id="shadow" fill="#000000" opacity="0.127215485" mask="url(#mask-14)" x="3" y="-1" width="28" height="2"></rect>
-                                    <path d="M12,-1 C12,-1 18.1896377,9.28253199 18,19 C18.1896377,28.9484822 13.1788406,33.0637549 13,41 C13.1788406,49.8305914 18,48 18,48 L19,42 C19,42 17.6801449,40.6702382 18,36 C17.6801449,30.952401 20,27.9191295 20,19 C20,10.4978767 17,-2.22044605e-16 17,-2.22044605e-16" id="Path-4" fill="#FFFFFF" mask="url(#mask-14)"></path>
-                                </g>
-                                <rect id="can" fill="#E4F5FC" x="3" y="0" width="22" height="2" rx="1"></rect>
-                                <rect id="can" fill="#E4F5FC" x="3" y="45" width="22" height="1" rx="0.5"></rect>
+                        <rect id="shadow" fill="#84BA18" x="10" y="112" width="90" height="3" rx="1.5"></rect>
+                        <g id="can" transform="translate(16.000000, 50.000000)">
+                            <g id="body" transform="translate(1.000000, 0.000000)">
+                                <mask id="mask-9" fill="white">
+                                    <use xlink:href="#path-8"></use>
+                                </mask>
+                                <use id="can" fill="#E4F5FC" xlink:href="#path-8"></use>
+                                <polygon id="can" fill="#6158C4" mask="url(#mask-9)" points="13 31 28 31 28 62 9 62"></polygon>
+                                <polygon id="can" fill="#6158C4" mask="url(#mask-9)" transform="translate(7.500000, 15.500000) scale(-1, -1) translate(-7.500000, -15.500000) " points="2 0 17 0 17 31 -2 31"></polygon>
+                                <circle id="can" fill="#FFDA3A" mask="url(#mask-9)" cx="13" cy="31" r="5"></circle>
+                                <rect id="can" fill="#F64848" mask="url(#mask-9)" x="4" y="20" width="18" height="4" rx="1"></rect>
                             </g>
+                            <rect fill="#E4F5FC" x="0" y="0" width="28" height="2" rx="1"></rect>
+                            <rect fill="#FFFFFF" opacity="0.296466884" x="0" y="0" width="28" height="1" rx="0.5"></rect>
+                            <rect id="shadow" fill="#000000" opacity="0.0362056903" x="1" y="2" width="26" height="1"></rect>
+                        </g>
+                        <g id="can" transform="translate(40.000000, 66.000000)">
+                            <g id="body" transform="translate(0.000000, 2.000000)">
+                                <mask id="mask-11" fill="white">
+                                    <use xlink:href="#path-10"></use>
+                                </mask>
+                                <use id="can" fill="#F64848" xlink:href="#path-10"></use>
+                                <rect id="Rectangle-11" fill="#FF6262" mask="url(#mask-11)" x="0" y="-1" width="28" height="9"></rect>
+                                <rect id="shadow" fill="#000000" opacity="0.127215485" mask="url(#mask-11)" x="3" y="-1" width="28" height="2"></rect>
+                                <path d="M12,-1 C12,-1 18.1896377,9.28253199 18,19 C18.1896377,28.9484822 13.1788406,33.0637549 13,41 C13.1788406,49.8305914 18,48 18,48 L19,42 C19,42 17.6801449,40.6702382 18,36 C17.6801449,30.952401 20,27.9191295 20,19 C20,10.4978767 17,-2.22044605e-16 17,-2.22044605e-16" id="Path-4" fill="#FFFFFF" mask="url(#mask-11)"></path>
+                            </g>
+                            <rect fill="#E4F5FC" x="3" y="0" width="22" height="2" rx="1"></rect>
+                            <rect fill="#E4F5FC" x="3" y="45" width="22" height="1" rx="0.5"></rect>
                         </g>
                     </g>
                 </g>

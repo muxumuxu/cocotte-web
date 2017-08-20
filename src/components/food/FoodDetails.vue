@@ -20,8 +20,9 @@
         <p>{{displayRisk}}</p>
         <h3>{{$t('food.information')}}</h3>
         <p>{{displayInfo}}</p>
-        <a v-if="food.risk && food.risk.url" :href="displayURL" target="_blank">En savoir plus</a>
+        <button v-on:click="openModal">En savoir plus</button>
       </div>
+      <p class="notice">{{$t('food.more.doctor')}}</p>
     </div>
   </div>
 </template>
@@ -59,12 +60,6 @@ export default {
         return this.food.info
       }
       return `${this.$i18n.t('food.more.no_info')}`
-    },
-    displayURL () {
-      if (this.food.risk && this.food.risk.url) {
-        return this.food.risk.url
-      }
-      return ''
     }
   },
   components: { },
@@ -80,8 +75,13 @@ export default {
 
 <style lang="scss">
 #food-details {
-  padding-top: 135px;
+  padding: 135px 0 100px;
   overflow-y: auto;
+  p.notice {
+    font-size: 12px;
+    opacity: 0.6;
+    padding-top: 25px;
+  }
   .flex {
     margin-top: 30px;
     display: flex;
@@ -137,7 +137,8 @@ export default {
     }
   }
   .info {
-    padding-bottom: 100px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(142,142,147,0.1);
     h3 {
       font-size: 18px;
       font-weight: bold;
@@ -149,12 +150,16 @@ export default {
       margin-top: 2px;
       font-size: 18px;
     }
-    a {
+    button {
+      border: none;
+      background: transparent;
+      padding: 0;
       color: #007CFF;
       text-decoration: none;
       display: block;
-      margin-top: 7px;
+      margin-top: 5px;
       font-size: 18px;
+      cursor: pointer;
     }
   }
 }
