@@ -6,7 +6,9 @@
           <h2>{{food.name}}</h2>
           <p :class="{ 'authorised': isAuthorized, 'careful': isCareful, 'forbidden': isForbidden }">{{displayDanger}}</p>
         </div>
-        <img :src="category.coverImage">
+        <div class="category-icon" :class="{ 'dairy' : isDairy, 'vege_fruits' : isVege_Fruits, 'fish_seafood' : isFish_Seafood, 'condiments' : isCondiments, 'drinks' : isDrinks, 'deli': isDeli, 'deserts' : isDeserts, 'carbs' : isCarbs, 'plants' : isPlants, 'cooked_food' : isCookedFood, 'meat' : isMeat }">
+          <img :src="category.coverImage">
+        </div>
       </div>
       <div class="flex">
         <div>
@@ -32,6 +34,42 @@ export default {
   name: 'food-details',
   props: ['food', 'category'],
   computed: {
+    isDairy () {
+      return this.category.id === 5
+    },
+    isVege_Fruits () {
+      return this.category.id === 3
+    },
+    isFish_Seafood () {
+      return this.category.id === 6
+    },
+    isCondiments () {
+      return this.category.id === 16
+    },
+    isDrinks () {
+      return this.category.id === 15
+    },
+    isDeli () {
+      return this.category.id === 10
+    },
+    isDeserts () {
+      return this.category.id === 17
+    },
+    isCarbs () {
+      return this.category.id === 18
+    },
+    isPlants () {
+      return this.category.id === 4
+    },
+    isCookedFood () {
+      return this.category.id === 9
+    },
+    isMeat () {
+      return this.category.id === 1
+    },
+    isMiscellanious () {
+      return this.category.id === 7
+    },
     isAuthorized () {
       return this.food.danger === 'empty'
     },
@@ -87,6 +125,51 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    .category-icon {
+      border-radius: 50px;
+      width: 92px;
+      height: 92px;
+      display: flex;
+      img {
+        transform: scale(0.5);
+      }
+      &.dairy {
+        background: #484291;
+      },
+      &.vege_fruits {
+        background: #FFDA3A;
+      }
+      &.fish_seafood {
+        background: #007CFF;
+      },
+      &.condiments {
+        background: #9F57B6;
+      },
+      &.drinks {
+        background: #99D22A;
+      },
+      &.deli {
+        background: #FFDA3A;
+      },
+      &.deserts {
+        background: #99D22A;
+      },
+      &.carbs {
+        background: #484291;
+      },
+      &.plants {
+        background: #FFDA3A;
+      },
+      &.cooked_food {
+        background: #9F57B6;
+      },
+      &.meat {
+        background: #FFDA3A;
+      },
+      &.miscellanious {
+        background: #99D22A;
+      }
+    }
     button, a {
       border: none;
       background: #F4F4F4;
