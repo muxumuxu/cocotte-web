@@ -268,6 +268,10 @@ autoprefixer@^7.1.2:
     postcss "^6.0.6"
     postcss-value-parser "^3.2.3"
 
+awesomplete@^1.1.1:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/awesomplete/-/awesomplete-1.1.2.tgz#b6e253f73474e46278bba5ae7f81d4262160fb75"
+
 aws-sign2@~0.6.0:
   version "0.6.0"
   resolved "https://registry.yarnpkg.com/aws-sign2/-/aws-sign2-0.6.0.tgz#14342dd38dbcc94d0e5b87d763cd63612c0e794f"
@@ -5994,6 +5998,13 @@ vm-browserify@0.0.4:
 void-elements@^2.0.0:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/void-elements/-/void-elements-2.0.1.tgz#c066afb582bb1cb4128d60ea92392e94d5e9dbec"
+
+vue-awesomplete@^0.1.8:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/vue-awesomplete/-/vue-awesomplete-0.1.8.tgz#26e4fb095e873236108942d788c18049ea0bf3fc"
+  dependencies:
+    awesomplete "^1.1.1"
+    vue "^2.3.3"
 
 vue-ga@^1.0.0:
   version "1.0.0"

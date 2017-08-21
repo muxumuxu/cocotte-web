@@ -19,7 +19,10 @@ const dataToState = (data) => {
     // associate the correct image
     category.coverImage = imageForCategory(category)
     // Delete redundant category
-    category.foods.forEach(food => delete food.category)
+    category.foods.forEach(food => {
+      food.categoryId = food.category.id
+      delete food.category
+    })
   })
   return { categories: sorted, userHasCloseBanner: false }
 }
