@@ -18,6 +18,7 @@ export default {
   },
   computed: {
     foods () {
+      window.scrollTo(0, 0)
       const matchedCategories = this.categories.filter(category => category.id === this.categoryId)
       if (matchedCategories.length > 0) {
         return matchedCategories[0].foods.filter(food => {
