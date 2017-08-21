@@ -29,7 +29,7 @@ export default {
 
 <style lang="scss">
 #landing-header {
-  background: #000000 url("../../assets/images/header-background.png") no-repeat;
+  background: url("../../assets/images/header-background.jpg") no-repeat;
   background-size: cover;
   padding: 20px;
 	h1 {

@@ -37,6 +37,6 @@ export default {
     about: 'À propos',
     press: 'Kit presse',
     team: 'Contacter l\'équipe',
-    with_love: 'Fait avec amour par l’équipe de Muxu.Muxu.'
+    with_love: 'Fait avec amour par l’équipe de Cocotte.'
   }
 }

@@ -24,7 +24,7 @@ export default {
 
 <style lang="scss">
 #landing-footer {
-	background: #D8D8D8;
+	background: #F7F7F7;
 	padding: 15px 0;
 	display: flex;
 	align-items: center;
@@ -40,9 +40,6 @@ export default {
 			text-decoration: none;
 			font-weight: bold;
 			color: #8E8E93;
-			&:hover {
-				border-bottom: 1px solid #FF0079;
-			}
 		}
 	}
 	nav {
@@ -55,12 +52,11 @@ export default {
 			font-size: 13px;
 			font-weight: bold;
 			margin-right: 10px;
-			&:hover {
-				border-bottom: 1px solid #FF0079;
-			}
+      display: flex;
 		}
 		.social {
 			margin-left: 10px;
+      display: flex;
 		}
 	}
 }

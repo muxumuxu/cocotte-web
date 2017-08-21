@@ -29,11 +29,10 @@ export default {
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
-		justify-content: space-between;
 		margin-top: 20px;
 		a {
-		  width: 115px;
-			margin-bottom: 30px;
+		  width: 105px;
+			margin: 0 12px 30px 0;
 			text-decoration: none;
 		}
 	}

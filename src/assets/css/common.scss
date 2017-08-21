@@ -59,6 +59,7 @@ input {
 input[type=text] {
 	padding: 8px 15px;
 	font-size: 16px;
+	font-weight: bold;
 }
 
 input[type=text]::placeholder {
@@ -98,6 +99,6 @@ input[type=submit] {
 }
 
 .wrapper {
-	width: 800px;
+	width: 585px;
 	margin: 0 auto;
 }

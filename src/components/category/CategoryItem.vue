@@ -72,7 +72,7 @@ export default {
       left: 10px;
     }
     &:hover {
-      animation: pulse 1s linear;
+      animation: pulse .5s linear;
       @keyframes pulse {
         from {
           transform: scale3d(1, 1, 1);

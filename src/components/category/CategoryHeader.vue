@@ -55,7 +55,7 @@ export default {
 			color: black;
 		}
 		input[type=search] {
-			width: 800px;
+			width: 585px;
 			height: 100%;
 			padding: 11px 15px 11px 40px;
 		  font-size: 18px;

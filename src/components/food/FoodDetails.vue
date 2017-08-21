@@ -115,6 +115,7 @@ export default {
   overflow-y: auto;
   p.notice {
     font-size: 12px;
+    line-height: 16px;
     opacity: 0.6;
     padding-top: 25px;
   }
