@@ -46,32 +46,6 @@ input {
   border-radius: 3px;
 }
 
-input[type=text] {
-	padding: 8px 15px;
-	font-size: 16px;
-	font-weight: bold;
-}
-
-input[type=text]::placeholder {
-	opacity: 0.5;
-	font-weight: bold;
-	color: black;
-}
-
-input[type=submit] {
-	background: #FF0079;
-	color: white;
-	font-weight: bold;
-	padding: 9px 15px;
-	font-size: 16px;
-	line-height: 16px;
-	transition: opacity .3s;
-	cursor: pointer;
-	&:hover {
-		opacity: 0.7;
-	}
-}
-
 .invisible {
 	display: none;
 }

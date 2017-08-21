@@ -4,7 +4,7 @@
       <router-link to="/">
         <img src="../../assets/images/logo-black.svg">
       </router-link>
-      <input type="search" :placeholder="$t('category.input_search')" autofocus>
+      <search-bar :gray-style="true" />
       <a href="https://itunes.apple.com/fr/app/coach-nourriture-enceinte/id1148406816?&mt=8" target="_blank">
         <img src="../../assets/images/app-store-badge.svg">
       </a>
@@ -23,6 +23,7 @@
 
 <script>
 import { mapGetters } from 'vuex'
+import SearchBar from '@/components/common/SearchBar'
 import CategoryFilters from '@/components/category/CategoryFilters'
 
 export default {
@@ -36,7 +37,7 @@ export default {
     onFilterChanged: { type: Function, default: () => {} }
   },
   computed: mapGetters({ categories: 'categories' }),
-  components: { CategoryFilters }
+  components: { CategoryFilters, SearchBar }
 }
 </script>
 
@@ -50,15 +51,6 @@ export default {
 		padding: 20px 20px 15px;
 		span {
 			color: black;
-		}
-		input[type=search] {
-			width: 585px;
-			height: 100%;
-			padding: 11px 15px 11px 40px;
-		  font-size: 18px;
-		  letter-spacing: -0.2px;
-		  background: #F4F4F4 url("../../assets/images/search-icon.svg") no-repeat;
-		  background-position: 15px 15px;
 		}
 	}
 	.wrapper {

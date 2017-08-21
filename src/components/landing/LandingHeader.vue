@@ -10,7 +10,7 @@
     </header>
     <div class="wrapper">
       <h1>{{$t('title')}}</h1>
-      <search-bar />
+      <search-bar :gray-style="false" />
     </div>
   </div>
 </template>
