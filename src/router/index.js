@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+import ga from 'vue-ga'
 import LandingPage from '@/components/landing/LandingPage'
 import AboutPage from '@/components/pages/AboutPage'
 import CategoryPage from '@/components/category/CategoryPage'
@@ -7,6 +8,9 @@ import FoodPage from '@/components/food/FoodPage'
 import ErrorPage from '@/components/pages/ErrorPage'
 
 Vue.use(Router)
+
+const router = new Router()
+ga(router, 'UA-83226935-10')
 
 export default new Router({
   routes: [

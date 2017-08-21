@@ -45,7 +45,7 @@ export default {
 			height: 331px;
 			position: relative;
 			bottom: -5px;
-      flex-grow: 1;
+      flex-shrink: 0;
 		}
 	}
 }
