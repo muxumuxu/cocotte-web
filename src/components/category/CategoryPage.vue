@@ -7,7 +7,7 @@
       :selected-filter="selectedFilter"
       :on-filter-changed="onFilterChanged" />
     <category-foods :category-id="category.id" :filter-by="selectedFilter" />
-    <banner-app />
+    <banner-app v-if="!userHasCloseBanner" />
   </div>
 </template>
 
@@ -28,7 +28,10 @@ export default {
       const categoryId = parseInt(this.$route.params.id)
       return this.categories.filter(cat => cat.id === categoryId)[0]
     },
-    ...mapGetters({ categories: 'categories' })
+    ...mapGetters({
+      categories: 'categories',
+      userHasCloseBanner: 'userHasCloseBanner'
+    })
   },
   methods: {
     onFilterChanged ({ filter }) {

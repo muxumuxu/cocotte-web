@@ -18,6 +18,7 @@ export default {
     closeBanner () {
       const banner = document.getElementById('banner-app')
       banner.classList.add('invisible')
+      this.$store.commit('toggleHasClosedBanner')
     }
   }
 }

@@ -21,16 +21,24 @@ const dataToState = (data) => {
     // Delete redundant category
     category.foods.forEach(food => delete food.category)
   })
-  return { categories: sorted }
+  return { categories: sorted, userHasCloseBanner: false }
 }
 
 const getters = {
-  categories: state => state.categories
+  categories: state => state.categories,
+  userHasCloseBanner: state => state.userHasCloseBanner
+}
+
+const mutations = {
+  toggleHasClosedBanner: (state) => {
+    state.userHasCloseBanner = true
+  }
 }
 
 const state = dataToState(data)
 
 export default new Vuex.Store({
   state,
-  getters
+  getters,
+  mutations
 })

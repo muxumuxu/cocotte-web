@@ -2,7 +2,7 @@
   <div id="food-page">
     <category-header :categoryName="category.name" :showFilters="false" :categoryId="parseInt($route.params.category_id)" />
     <food-details :food="food" :category="category" />
-    <banner-app />
+    <banner-app v-if="!userHasCloseBanner" />
     <download-modal />
   </div>
 </template>
@@ -26,7 +26,10 @@ export default {
       const foodId = parseInt(this.$route.params.food_id)
       return this.category.foods.filter(food => food.id === foodId)[0]
     },
-    ...mapGetters({ categories: 'categories' })
+    ...mapGetters({
+      categories: 'categories',
+      userHasCloseBanner: 'userHasCloseBanner'
+    })
   }
 }
 </script>
