@@ -61,7 +61,7 @@ input[type=text]::placeholder {
 }
 
 .autocomplete-gray {
-  width: 530px;
+  width: 532px;
   height: 100%;
   padding: 11px 15px 11px 40px;
   font-size: 18px;
@@ -71,6 +71,42 @@ input[type=text]::placeholder {
 }
 
 .awesomplete {
-  display: block
+  display: block;
+}
+
+.awesomplete mark {
+  background: white;
+  color: black;
+}
+
+.awesomplete > ul {
+  padding: 14px 12px;
+  background: white;
+  border: none;
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.14);
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+.awesomplete > ul > li {
+  padding: 0;
+  margin-bottom: 12px;
+  color: #BEBEBF;
+}
+
+.awesomplete > ul > li:hover {
+  background: transparent;
+}
+
+.awesomplete > ul > li:hover mark {
+  background: white;
+}
+
+.awesomplete > ul > li:last-child {
+  margin-bottom: 0;
+}
+
+.awesomplete > ul:before {
+  display: none !important;
 }
 </style>
