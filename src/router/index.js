@@ -9,10 +9,7 @@ import ErrorPage from '@/components/pages/ErrorPage'
 
 Vue.use(Router)
 
-const router = new Router()
-ga(router, 'UA-83226935-10')
-
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: '/',
@@ -45,3 +42,7 @@ export default new Router({
     }
   ]
 })
+
+ga(router, 'UA-83226935-10')
+
+export default router
