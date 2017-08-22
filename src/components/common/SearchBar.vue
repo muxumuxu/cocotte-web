@@ -46,7 +46,7 @@ export default {
 
 <style lang="scss">
 .autocomplete-white {
-  width: 100%;
+  width: 585px;
   box-sizing: border-box;
   margin: 90px auto 0;
   padding: 11px 0 11px 40px;
