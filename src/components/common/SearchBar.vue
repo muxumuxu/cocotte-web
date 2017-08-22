@@ -86,6 +86,7 @@ input[type=text]::placeholder {
   box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.14) !important;
   border-radius: 3px !important;
   margin-top: 5px !important;
+  font-size: 18px !important;
 }
 
 .awesomplete > ul > li {
