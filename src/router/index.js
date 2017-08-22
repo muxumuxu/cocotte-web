@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Head from 'vue-head'
 import ga from 'vue-ga'
 import LandingPage from '@/components/landing/LandingPage'
 import AboutPage from '@/components/pages/AboutPage'
@@ -8,7 +7,6 @@ import CategoryPage from '@/components/category/CategoryPage'
 import FoodPage from '@/components/food/FoodPage'
 import ErrorPage from '@/components/pages/ErrorPage'
 
-Vue.use(Head)
 Vue.use(Router)
 
 const router = new Router()
