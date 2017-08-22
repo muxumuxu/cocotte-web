@@ -75,35 +75,35 @@ input[type=text]::placeholder {
 }
 
 .awesomplete mark {
-  background: white;
-  color: black;
+  background: white !important;
+  color: black !important;
 }
 
 .awesomplete > ul {
-  padding: 14px 12px;
-  background: white;
-  border: none;
-  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.14);
-  border-radius: 3px;
-  margin-top: 5px;
+  padding: 14px 12px !important;
+  background: white !important;
+  border: none !important;
+  box-shadow: 0 2px 14px 0 rgba(0,0,0,0.12), 0 0 4px 0 rgba(0,0,0,0.14) !important;
+  border-radius: 3px !important;
+  margin-top: 5px !important;
 }
 
 .awesomplete > ul > li {
-  padding: 0;
-  margin-bottom: 12px;
-  color: #BEBEBF;
+  padding: 0 !important;
+  margin-bottom: 12px !important;
+  color: #BEBEBF !important;
 }
 
 .awesomplete > ul > li:hover {
-  background: transparent;
+  background: transparent !important;
 }
 
 .awesomplete > ul > li:hover mark {
-  background: white;
+  background: white !important;
 }
 
 .awesomplete > ul > li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 
 .awesomplete > ul:before {
