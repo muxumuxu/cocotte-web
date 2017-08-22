@@ -2,18 +2,18 @@
   <div id="banner-app">
     <button v-on:click="closeBanner"><img class="cross" src="../../assets/images/white-cross.svg"></button>
     <div class="wrapper">
-      <img src="../../assets/images/2-iphones.png">
-      <sms-form :formTitle="$t('banner_app.title')" :formSubtitle="$t('banner_app.subtitle')" />
+      <img src="../../assets/images/2-iphones.png" class="iphones">
+      <download-app :bannerTitle="$t('banner_app.title')" />
     </div>
   </div>
 </template>
 
 <script>
-import SmsForm from '@/components/common/SmsForm'
+import DownloadApp from '@/components/common/DownloadApp'
 export default {
   name: 'banner-app',
   computed: { },
-  components: { SmsForm },
+  components: { DownloadApp },
   methods: {
     closeBanner () {
       const banner = document.getElementById('banner-app')
@@ -41,7 +41,7 @@ export default {
 	}
 	.wrapper {
 		display: flex;
-		img {
+		img.iphones {
 			width: 194px;
 			height: 331px;
 			position: relative;

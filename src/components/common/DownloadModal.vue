@@ -2,18 +2,18 @@
   <div id="download-modal" class="invisible">
     <button v-on:click="closeModal"><img class="cross" src="../../assets/images/black-cross.svg"></button>
     <div class="wrapper">
-      <img src='../../assets/images/1-iphone.png'>
-      <sms-form :formTitle="$t('modal.title')" :formSubtitle="$t('banner_app.subtitle')" />
+      <img src='../../assets/images/1-iphone.png' class="iphone">
+      <download-app :bannerTitle="$t('modal.title')" />
     </div>
   </div>
 </template>
 
 <script>
-import SmsForm from '@/components/common/SmsForm'
+import DownloadApp from '@/components/common/DownloadApp'
 export default {
   name: 'download-modal',
   computed: { },
-  components: { SmsForm },
+  components: { DownloadApp },
   methods: {
     closeModal () {
       const banner = document.getElementById('download-modal')
@@ -43,17 +43,14 @@ export default {
 	.wrapper {
 		display: flex;
 		margin-top: 15%;
-		img {
+		img.iphone {
 			width: 166px;
 			height: 302px;
 		}
-		#sms-form {
+		#download-app {
 			margin-top: 80px;
-			h2, p {
+			h2 {
 				color: black;
-			}
-			input[type=text] {
-				background: #EFEFEF;
 			}
 		}
 	}
