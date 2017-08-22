@@ -38,7 +38,7 @@ export default {
 #food-page {
   #banner-app {
     position: fixed;
-    bottom: 49px;
+    bottom: 46px;
     width: 100%;
     padding: 20px 0;
     background: rgba(97,97,97,0.8);

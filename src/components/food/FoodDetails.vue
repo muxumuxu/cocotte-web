@@ -129,8 +129,12 @@ export default {
       width: 92px;
       height: 92px;
       display: flex;
+      position: relative;
+      z-index: -1;
       img {
         transform: scale(0.5);
+        position: relative;
+        z-index: -2;
       }
       &.dairy {
         background: #484291;
