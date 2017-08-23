@@ -33,7 +33,10 @@ export default {
         } else if (food.danger === 'avoid') {
           className = 'background-dropdown-forbidden'
         }
-        return `<div class="${className}">${food.name}</div>`
+        return {
+          label: `<div class="${className}">${food.name}</div>`,
+          value: food.name
+        }
       })
       return { list }
     },
