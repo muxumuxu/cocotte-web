@@ -32,3 +32,13 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 ## Locales
 
 The app is currently localized in FR, translations can be found in the `i18n` folder.
+
+## Deployment
+
+The website is hosted on surge.
+
+```
+npm run build
+cd dist
+surge -d cocotte-app.com
+```
