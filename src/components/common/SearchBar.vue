@@ -121,14 +121,26 @@ input[type=text]::placeholder {
 }
 
 .background-authorised {
- background: url("../../assets/images/authorised.svg") no-repeat 0px 9px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding-left: 25px;
+  background: url("../../assets/images/authorised.svg") no-repeat 0px 0px;
 }
 
 .background-careful {
- background: url("../../assets/images/careful.svg") no-repeat 0px 10px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding-left: 25px;
+  background: url("../../assets/images/careful.svg") no-repeat -1px 1px;
 }
 
 .background-forbidden {
- background: url("../../assets/images/forbidden.svg") no-repeat 0px 9px;
+  display: flex;
+  align-items: center;
+  height: 20px;
+  padding-left: 25px;
+  background: url("../../assets/images/forbidden.svg") no-repeat 0px 0px;
 }
 </style>
