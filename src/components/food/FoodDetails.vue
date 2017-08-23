@@ -235,7 +235,7 @@ export default {
     p {
       opacity: 0.6;
       line-height: 23px;
-      margin-top: 2px;
+      margin-top: 5px;
       font-size: 18px;
     }
     button {

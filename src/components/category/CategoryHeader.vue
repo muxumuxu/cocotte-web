@@ -16,7 +16,7 @@
           :selected-filter="selectedFilter"
           :on-filter-changed="onFilterChanged" />
       </router-link>
-      <h1 v-if="errorMessageTitle">{{errorMessageTitle}}</h1>
+      <h1 v-if="categoryHeaderTitle">{{categoryHeaderTitle}}</h1>
     </div>
   </div>
 </template>
@@ -32,7 +32,7 @@ export default {
     showFilters: { type: Boolean },
     categoryName: { type: String },
     categoryId: { type: Number },
-    errorMessageTitle: { type: String },
+    categoryHeaderTitle: { type: String },
     selectedFilter: { type: String },
     onFilterChanged: { type: Function, default: () => {} }
   },

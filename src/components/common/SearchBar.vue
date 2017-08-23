@@ -124,26 +124,20 @@ input[type=text]::placeholder {
 }
 
 .background-dropdown-authorised {
-  display: flex;
-  align-items: center;
   height: 20px;
-  padding-left: 25px;
-  background: url("../../assets/images/authorised.svg") no-repeat 0px 0px;
+  padding: 3px 0 0 25px;
+  background: url("../../assets/images/authorised.svg") no-repeat 0px 2px;
 }
 
 .background-dropdown-careful {
-  display: flex;
-  align-items: center;
   height: 20px;
-  padding-left: 25px;
-  background: url("../../assets/images/careful.svg") no-repeat -1px 1px;
+  padding: 3px 0 0 25px;
+  background: url("../../assets/images/careful.svg") no-repeat -1px 3px;
 }
 
 .background-dropdown-forbidden {
-  display: flex;
-  align-items: center;
   height: 20px;
-  padding-left: 25px;
-  background: url("../../assets/images/forbidden.svg") no-repeat 0px 0px;
+  padding: 3px 0 0 25px;
+  background: url("../../assets/images/forbidden.svg") no-repeat 0px 2px;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div id="error-page">
-    <category-header :showFilters="false" :errorMessageTitle="$t('error_page.title')" />
+    <category-header :showFilters="false" :categoryHeaderTitle="$t('error_page.title')" />
     <div class="wrapper">
       <div class="message">
         <img src="../../assets/images/error-page.svg">
