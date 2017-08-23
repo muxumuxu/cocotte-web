@@ -92,7 +92,7 @@ input[type=text]::placeholder {
 .awesomplete > ul > li {
   padding: 0 !important;
   margin-bottom: 12px !important;
-  color: #BEBEBF !important;
+  color: #969696 !important;
 }
 
 .awesomplete > ul > li:hover {
