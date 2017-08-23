@@ -26,7 +26,16 @@ export default {
       return [].concat.apply([], this.categories.map(category => category.foods))
     },
     autocompleteData () {
-      return { list: this.foods.map(food => food.name) }
+      const list = this.foods.map(food => {
+        let className = 'background-authorised'
+        if (food.danger === 'care') {
+          className = 'background-careful'
+        } else if (food.danger === 'avoid') {
+          className = 'background-forbidden'
+        }
+        return `<div class="${className}">${food.name}</div>`
+      })
+      return { list }
     },
     ...mapGetters({ categories: 'categories' })
   },
@@ -109,5 +118,17 @@ input[type=text]::placeholder {
 
 .awesomplete > ul:before {
   display: none !important;
+}
+
+.background-authorised {
+ background: url("../../assets/images/authorised.svg") no-repeat 0px 9px;
+}
+
+.background-careful {
+ background: url("../../assets/images/careful.svg") no-repeat 0px 10px;
+}
+
+.background-forbidden {
+ background: url("../../assets/images/forbidden.svg") no-repeat 0px 9px;
 }
 </style>
