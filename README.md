@@ -41,34 +41,26 @@ Websites are hosted on surge.
 
 ```
 git checkout master
-npm run build
-cd dist
-surge -d cocotte-app.com
+npm run build; surge -d cocotte-app.com -p dist
 ```
 
 ### enceinte-manger.com
 
 ```
 git checkout enceinte-manger.com
-npm run build
-cd dist
-surge -d enceinte-manger.com
+npm run build; surge -d enceinte-manger.com -p dist
 ```
 
 ### enceinte-alimentation.com
 
 ```
 git checkout enceinte-alimentation.com
-npm run build
-cd dist
-surge -d enceinte-manger.com
+npm run build; surge -d enceinte-alimentation.com -p dist
 ```
 
 ### alimentation-enceinte.com
 
 ```
 git checkout alimentation-enceinte.com
-npm run build
-cd dist
-surge -d enceinte-manger.com
+npm run build; surge -d enceinte-manger.com -p dist
 ```
