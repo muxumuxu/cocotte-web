@@ -35,6 +35,9 @@ export default {
 			margin: 0 12px 30px 0;
 			text-decoration: none;
 		}
+    a:nth-child(5), a:nth-child(10) {
+      margin-right: 0;
+    }
 	}
 }
 </style>

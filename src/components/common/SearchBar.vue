@@ -58,7 +58,7 @@ export default {
 
 <style lang="scss">
 .autocomplete-white {
-  width: 585px;
+  width: 573px;
   box-sizing: border-box;
   margin: 90px auto 0;
   padding: 11px 0 11px 40px;
@@ -73,7 +73,7 @@ input[type=text]::placeholder {
 }
 
 .autocomplete-gray {
-  width: 532px;
+  width: 518px;
   height: 100%;
   padding: 11px 15px 11px 40px;
   font-size: 18px;

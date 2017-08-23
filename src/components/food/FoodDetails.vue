@@ -200,7 +200,7 @@ export default {
       }
       p {
         padding: 10px 0 10px 27px;
-        margin-top: 5px;
+        margin-bottom: 5px;
         opacity: 1;
         &.authorised {
           background: url("../../assets/images/authorised.svg") no-repeat 0px 8px;

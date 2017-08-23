@@ -59,7 +59,7 @@ export default {
 <style lang="scss">
 #category-item {
   .category-icon {
-    width: 110px;
+    width: 105px;
     height: 128px;
     border-radius: 6px;
     margin-bottom: 5px;
@@ -69,7 +69,7 @@ export default {
     img {
       position: absolute;
       bottom: 13px;
-      left: 10px;
+      left: 8px;
     }
     &:hover {
       animation: pulse .5s linear;

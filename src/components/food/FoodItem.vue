@@ -27,7 +27,7 @@ export default {
 <style lang="scss">
 #food-item {
   padding: 10px 0 10px 27px;
-  margin-left: 10px;
+  margin-left: 11px;
   a {
     text-decoration: none;
     color: black;
