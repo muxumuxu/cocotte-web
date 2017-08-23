@@ -27,11 +27,11 @@ export default {
     },
     autocompleteData () {
       const list = this.foods.map(food => {
-        let className = 'background-authorised'
+        let className = 'background-dropdown-authorised'
         if (food.danger === 'care') {
-          className = 'background-careful'
+          className = 'background-dropdown-careful'
         } else if (food.danger === 'avoid') {
-          className = 'background-forbidden'
+          className = 'background-dropdown-forbidden'
         }
         return `<div class="${className}">${food.name}</div>`
       })
@@ -120,7 +120,7 @@ input[type=text]::placeholder {
   display: none !important;
 }
 
-.background-authorised {
+.background-dropdown-authorised {
   display: flex;
   align-items: center;
   height: 20px;
@@ -128,7 +128,7 @@ input[type=text]::placeholder {
   background: url("../../assets/images/authorised.svg") no-repeat 0px 0px;
 }
 
-.background-careful {
+.background-dropdown-careful {
   display: flex;
   align-items: center;
   height: 20px;
@@ -136,7 +136,7 @@ input[type=text]::placeholder {
   background: url("../../assets/images/careful.svg") no-repeat -1px 1px;
 }
 
-.background-forbidden {
+.background-dropdown-forbidden {
   display: flex;
   align-items: center;
   height: 20px;
