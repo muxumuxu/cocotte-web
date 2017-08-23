@@ -43,6 +43,6 @@ const router = new Router({
   ]
 })
 
-ga(router, 'UA-83226935-10')
+ga(router, 'UA-83226935-13')
 
 export default router
