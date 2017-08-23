@@ -62,5 +62,5 @@ npm run build; surge -d enceinte-alimentation.com -p dist
 
 ```
 git checkout alimentation-enceinte.com
-npm run build; surge -d enceinte-manger.com -p dist
+npm run build; surge -d alimentation-enceinte.com -p dist
 ```
