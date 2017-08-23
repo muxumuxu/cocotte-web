@@ -35,10 +35,40 @@ The app is currently localized in FR, translations can be found in the `i18n` fo
 
 ## Deployment
 
-The website is hosted on surge.
+Websites are hosted on surge.
+
+### cocotte-app.com
 
 ```
+git checkout master
 npm run build
 cd dist
 surge -d cocotte-app.com
+```
+
+### enceinte-manger.com
+
+```
+git checkout enceinte-manger.com
+npm run build
+cd dist
+surge -d enceinte-manger.com
+```
+
+### enceinte-alimentation.com
+
+```
+git checkout enceinte-alimentation.com
+npm run build
+cd dist
+surge -d enceinte-manger.com
+```
+
+### alimentation-enceinte.com
+
+```
+git checkout alimentation-enceinte.com
+npm run build
+cd dist
+surge -d enceinte-manger.com
 ```
