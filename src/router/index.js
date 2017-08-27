@@ -63,6 +63,6 @@ router.beforeEach((to, from, next) => {
   next()
 })
 
-ga(router, 'UA-83226935-10')
+ga(router, 'UA-83226935-13')
 
 export default router
