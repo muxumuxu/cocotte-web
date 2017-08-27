@@ -1,9 +1,9 @@
 <template>
-  <div id="download-modal" class="invisible">
+  <div id="desktop-modal" class="invisible">
     <button v-on:click="closeModal"><img class="cross" src="../../assets/images/black-cross.svg"></button>
     <div class="wrapper">
       <img src='../../assets/images/1-iphone.png' class="iphone">
-      <download-app :bannerTitle="$t('modal.title')" />
+      <download-app :bannerTitle="$t('modal_desktop.title')" />
     </div>
   </div>
 </template>
@@ -11,12 +11,12 @@
 <script>
 import DownloadApp from '@/components/common/DownloadApp'
 export default {
-  name: 'download-modal',
+  name: 'desktop-modal',
   computed: { },
   components: { DownloadApp },
   methods: {
     closeModal () {
-      const banner = document.getElementById('download-modal')
+      const banner = document.getElementById('desktop-modal')
       banner.classList.remove('visible')
       banner.classList.add('invisible')
     }
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style lang="scss">
-#download-modal {
+#desktop-modal {
 	width: 100%;
 	height: 100%;
 	position: fixed;
