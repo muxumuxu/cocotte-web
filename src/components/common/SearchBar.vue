@@ -99,6 +99,7 @@ input[type=text]::placeholder {
   border-radius: 3px !important;
   margin-top: 5px !important;
   font-size: 18px !important;
+  transition: none !important;
 }
 
 .awesomplete > ul > li {

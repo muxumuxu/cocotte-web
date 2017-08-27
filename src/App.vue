@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view />
-    <landing-footer />
+    <landing-footer v-if="isFooterEnabled" />
   </div>
 </template>
 
@@ -9,7 +9,15 @@
 import LandingFooter from '@/components/landing/LandingFooter'
 export default {
   name: 'app',
-  components: { LandingFooter }
+  components: { LandingFooter },
+  computed: {
+    isFooterEnabled () {
+      return this.$route.name !== 'MobilePage'
+    }
+  },
+  mounted: function () {
+    this.$store.dispatch('LOAD_FOODS')
+  }
 }
 </script>
 

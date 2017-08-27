@@ -3,6 +3,10 @@ import Vuex from 'vuex'
 import data from './foods.json'
 import _ from 'lodash'
 import imageForCategory from './category_helper'
+import axios from 'axios'
+
+const LOAD_FOODS = 'LOAD_FOODS'
+const SET_FOODS = 'SET_FOODS'
 
 Vue.use(Vuex)
 
@@ -24,7 +28,7 @@ const dataToState = (data) => {
       delete food.category
     })
   })
-  return { categories: sorted, userHasCloseBanner: false }
+  return sorted
 }
 
 const getters = {
@@ -35,13 +39,28 @@ const getters = {
 const mutations = {
   toggleHasClosedBanner: (state) => {
     state.userHasCloseBanner = true
+  },
+  [SET_FOODS]: (state, foods) => {
+    state.categories = dataToState(foods)
   }
 }
 
-const state = dataToState(data)
+const actions = {
+  [LOAD_FOODS]: ({ commit }) => {
+    axios.get('https://pregnant-foods.herokuapp.com/foods.json').then(res => {
+      commit(SET_FOODS, res.data)
+    })
+  }
+}
+
+const state = {
+  categories: dataToState(data),
+  userHasCloseBanner: false
+}
 
 export default new Vuex.Store({
   state,
   getters,
-  mutations
+  mutations,
+  actions
 })

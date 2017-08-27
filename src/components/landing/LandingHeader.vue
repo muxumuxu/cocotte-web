@@ -29,8 +29,5 @@ export default {
   background: url("../../assets/images/header-background.jpg") #000 no-repeat;
   background-size: cover;
   padding: 20px;
-	h1 {
-		width: 345px;
-	}
 }
 </style>
