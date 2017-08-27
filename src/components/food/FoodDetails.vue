@@ -101,7 +101,7 @@ export default {
   components: { },
   methods: {
     openModal () {
-      const banner = document.getElementById('download-modal')
+      const banner = document.getElementById('desktop-modal')
       banner.classList.remove('invisible')
       banner.classList.add('visible')
     }

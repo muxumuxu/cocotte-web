@@ -3,7 +3,7 @@
     <category-header :categoryName="category.name" :showFilters="false" :categoryId="parseInt($route.params.category_id)" />
     <food-details :food="food" :category="category" />
     <banner-app v-if="!userHasCloseBanner" />
-    <download-modal />
+    <desktop-modal />
   </div>
 </template>
 
@@ -12,11 +12,11 @@ import { mapGetters } from 'vuex'
 import CategoryHeader from '@/components/category/CategoryHeader'
 import FoodDetails from '@/components/food/FoodDetails'
 import BannerApp from '@/components/common/BannerApp'
-import DownloadModal from '@/components/common/DownloadModal'
+import DesktopModal from '@/components/common/DesktopModal'
 
 export default {
   name: 'food-page',
-  components: { CategoryHeader, FoodDetails, BannerApp, DownloadModal },
+  components: { CategoryHeader, FoodDetails, BannerApp, DesktopModal },
   computed: {
     category () {
       const categoryId = parseInt(this.$route.params.category_id)

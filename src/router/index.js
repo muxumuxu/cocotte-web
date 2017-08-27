@@ -5,6 +5,7 @@ import LandingPage from '@/components/landing/LandingPage'
 import AboutPage from '@/components/pages/AboutPage'
 import CategoryPage from '@/components/category/CategoryPage'
 import FoodPage from '@/components/food/FoodPage'
+import MobilePage from '@/components/mobile/MobilePage'
 import ErrorPage from '@/components/pages/ErrorPage'
 
 Vue.use(Router)
@@ -38,6 +39,11 @@ const router = new Router({
       component: ErrorPage
     },
     {
+      path: '/mobile',
+      name: 'MobilePage',
+      component: MobilePage
+    },
+    {
       path: '*',
       redirect: '404'
     }
@@ -45,5 +51,18 @@ const router = new Router({
 })
 
 ga(router, 'UA-83226935-15')
+
+router.beforeEach((to, from, next) => {
+  const userAgent = navigator.userAgent
+  const patterns = ['iPhone', 'iPod', 'Android', 'Windows Phone']
+  const matches = patterns.filter(p => {
+    const regex = new RegExp(p, 'i')
+    return userAgent.match(regex)
+  })
+  if (matches.length > 0 && to.fullPath !== '/mobile') {
+    return next('/mobile')
+  }
+  next()
+})
 
 export default router
