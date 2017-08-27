@@ -22,7 +22,8 @@ export default {
   text-align: center;
   img {
     &.logo {
-      margin-bottom: 25px;
+      margin: 0 auto 25px;
+      display: block;
     }
     &.iphones {
       max-width: 100%;
