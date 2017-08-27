@@ -3,8 +3,11 @@ export default {
   banner_app: {
     title: 'L\'application mobile Cocotte fonctionne avec ou sans connexion, emportez-la partout avec vous.'
   },
-  modal: {
+  modal_desktop: {
     title: 'Créez votre liste de favoris partageable à tout moment en téléchargeant l’application iPhone.'
+  },
+  mobile_page: {
+    title: 'Pour plus de confort, téléchargez cocotte sur votre mobile. Le site n’est disponible que sur ordinateur.'
   },
   category: {
     input_search: 'Rechercher un aliment',
