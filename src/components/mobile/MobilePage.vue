@@ -24,6 +24,7 @@ export default {
     &.logo {
       margin: 0 auto 25px;
       display: block;
+      max-width: 100%;
     }
     &.iphones {
       max-width: 100%;
