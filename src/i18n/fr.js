@@ -6,7 +6,7 @@ export default {
   modal_desktop: {
     title: 'Créez votre liste de favoris partageable à tout moment en téléchargeant l’application iPhone.'
   },
-  modal_mobile: {
+  mobile_page: {
     title: 'Pour plus de confort, téléchargez cocotte sur votre mobile. Le site n’est disponible que sur ordinateur.'
   },
   category: {

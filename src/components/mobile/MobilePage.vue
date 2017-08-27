@@ -1,14 +1,14 @@
 <template>
-  <div id="mobile-modal" class="invisible">
+  <div id="mobile-page">
     <img src="../../assets/images/logo-black.svg" class="logo">
-    <h2>{{$t('modal_mobile.title')}}</h2>
+    <h2>{{$t('mobile_page.title')}}</h2>
     <img src="../../assets/images/app-store-badge-black.svg">
   </div>
 </template>
 
 <script>
 export default {
-  name: 'mobile-modal',
+  name: 'mobile-page',
   computed: { },
   components: { },
   methods: { }
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss">
-#download-modal {
+#mobile-page {
   width: 100%;
 	height: 100%;
 	position: fixed;
@@ -29,6 +29,7 @@ export default {
   }
   h2 {
     margin: 25px 0;
+    color: black;
   }
 }
 </style>
