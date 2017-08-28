@@ -106,6 +106,7 @@ input[type=text]::placeholder {
   padding: 0 !important;
   margin-bottom: 12px !important;
   color: #969696 !important;
+  display: flex;
 }
 
 .awesomplete > ul > li:hover {
