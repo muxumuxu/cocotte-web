@@ -14,6 +14,9 @@ export default {
     isFooterEnabled () {
       return this.$route.name !== 'MobilePage'
     }
+  },
+  mounted: function () {
+    this.$store.dispatch('LOAD_FOODS')
   }
 }
 </script>
