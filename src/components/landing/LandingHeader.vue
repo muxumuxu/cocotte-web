@@ -4,7 +4,7 @@
       <router-link to="/">
         <img src="../../assets/images/logo-white.svg">
       </router-link>
-      <a href="https://itunes.apple.com/fr/app/coach-nourriture-enceinte/id1148406816?&mt=8" target="_blank">
+      <a href="https://muxu.gift/cocotte-app-app-store" target="_blank">
         <img src="../../assets/images/app-store-badge.svg">
       </a>
     </header>

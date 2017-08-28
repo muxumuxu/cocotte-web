@@ -1,7 +1,7 @@
 <template>
   <div id="download-app">
     <h2>{{bannerTitle}}</h2>
-    <a href="https://itunes.apple.com/fr/app/coach-nourriture-enceinte/id1148406816?&mt=8" target="_blank">
+    <a href="https://muxu.gift/cocotte-app-app-store" target="_blank">
       <img src="../../assets/images/app-store-badge-black.svg">
     </a>
   </div>
