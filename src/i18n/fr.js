@@ -1,5 +1,6 @@
 export default {
   title: 'Quels aliments peut-on manger pendant la grossesse ?',
+  video: 'Voir la vidéo de 30s.',
   banner_app: {
     title: 'L\'application mobile Cocotte fonctionne avec ou sans connexion, emportez-la partout avec vous.'
   },

@@ -10,6 +10,7 @@
     </header>
     <div class="wrapper">
       <h1>{{$t('title')}}</h1>
+      <play-video />
       <search-bar :gray-style="false" />
     </div>
   </div>
@@ -17,10 +18,11 @@
 
 <script>
 import SearchBar from '@/components/common/SearchBar'
+import PlayVideo from '@/components/common/PlayVideo'
 
 export default {
   name: 'landing-header',
-  components: { SearchBar }
+  components: { SearchBar, PlayVideo }
 }
 </script>
 
@@ -29,5 +31,6 @@ export default {
   background: url("../../assets/images/header-background.jpg") #000 no-repeat;
   background-size: cover;
   padding: 20px;
+  text-align: center;
 }
 </style>
