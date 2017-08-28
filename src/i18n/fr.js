@@ -2,7 +2,7 @@ export default {
   title: 'Quels aliments peut-on manger pendant la grossesse ?',
   video: 'Voir la vidéo de 30s.',
   banner_app: {
-    title: 'Cocotte a son appli mobile, qui fonctionne avec ou sans connexion. Téléchargez-la pour l\'avoir tout le temps sur vous.'
+    title: 'Cocotte a son appli mobile, qui fonctionne avec ou sans connexion. Téléchargez-la pour l\'avoir tout le temps avec vous.'
   },
   modal_desktop: {
     title: 'Créez votre liste de favoris partageable à tout moment en téléchargeant l’application iPhone.'
