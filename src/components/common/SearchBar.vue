@@ -60,7 +60,7 @@ export default {
 .autocomplete-white {
   width: 573px;
   box-sizing: border-box;
-  margin: 90px auto 0;
+  margin: 0 auto;
   padding: 11px 0 11px 40px;
   font-size: 18px;
   letter-spacing: -0.2px;
