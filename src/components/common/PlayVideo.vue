@@ -10,30 +10,18 @@
 </template>
 
 <script>
-import Player from '@vimeo/player'
-
 export default {
   name: 'play-video',
   computed: { },
   components: { },
   methods: {
     playVideo () {
-      const player = new Player('handstick', {
-        id: 231192959
-      })
       const video = document.getElementById('video-overlay')
-
       video.classList.add('play')
-      player.api('play')
     },
     closeVideo () {
-      const player = new Player('handstick', {
-        id: 231192959
-      })
       const video = document.getElementById('video-overlay')
-
       video.classList.remove('play')
-      player.api('unload')
     }
   }
 }
