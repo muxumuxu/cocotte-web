@@ -1,6 +1,6 @@
 <template>
   <div id="play-video">
-    <button v-on:click="playVideo"><img src="../../assets/images/pink-button.svg"></button>
+    <button class="play" v-on:click="playVideo"><img src="../../assets/images/pink-button.svg"></button>
     <p>{{$t('video')}}</p>
     <div id="video-overlay">
       <button v-on:click="closeVideo"><span class="close"></span></button>
@@ -34,8 +34,10 @@ export default {
     border: none;
     background: transparent;
     cursor: pointer;
-    &:hover {
-      opacity: 0.8;
+    &.play {
+      &:hover {
+        opacity: 0.8;
+      }
     }
   }
   p {
@@ -71,9 +73,7 @@ export default {
       width: 40px;
       height: 40px;
       background: url(../../assets/images/close.svg) no-repeat 0 0;
-      cursor: pointer;
       opacity: 0.6;
-      transition: .3s opacity linear;
     }
   }
 }
