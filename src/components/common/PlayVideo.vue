@@ -34,6 +34,9 @@ export default {
     border: none;
     background: transparent;
     cursor: pointer;
+    &:hover {
+      opacity: 0.8;
+    }
   }
   p {
     color: white;
