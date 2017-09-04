@@ -12,7 +12,7 @@ import CookedFoodImage from '@/assets/images/cooked_food.svg'
 import PlantsImage from '@/assets/images/plants.svg'
 
 const imageForCategory = (category) => {
-  switch (category.id) {
+  switch (category.serverId) {
     case 1:
       return MeatImage
     case 3:
