@@ -60,7 +60,7 @@ export default {
 .autocomplete-white {
   width: 573px;
   box-sizing: border-box;
-  margin: 90px auto 0;
+  margin: 0 auto;
   padding: 11px 0 11px 40px;
   font-size: 18px;
   letter-spacing: -0.2px;
@@ -106,6 +106,7 @@ input[type=text]::placeholder {
   padding: 0 !important;
   margin-bottom: 12px !important;
   color: #969696 !important;
+  display: flex;
 }
 
 .awesomplete > ul > li:hover {
