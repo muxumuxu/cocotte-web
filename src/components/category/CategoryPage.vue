@@ -25,10 +25,10 @@ export default {
   },
   computed: {
     category () {
-      const categoryId = parseInt(this.$route.params.id)
-      const matched = this.categories.filter(cat => cat.id === categoryId)
-      if (matched.length > 0) {
-        return matched[0]
+      const id = this.$route.params.id
+      const category = this.$store.getters.getCategoryById(id)
+      if (category) {
+        return category
       }
       this.$router.push('/404')
     },

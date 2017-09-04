@@ -15,40 +15,40 @@ export default {
   computed: {
     ...mapGetters({ categories: 'categories' }),
     isDairy () {
-      return this.category.id === 5
+      return this.category.serverId === 5
     },
     isVege_Fruits () {
-      return this.category.id === 3
+      return this.category.serverId === 3
     },
     isFish_Seafood () {
-      return this.category.id === 6
+      return this.category.serverId === 6
     },
     isCondiments () {
-      return this.category.id === 16
+      return this.category.serverId === 16
     },
     isDrinks () {
-      return this.category.id === 15
+      return this.category.serverId === 15
     },
     isDeli () {
-      return this.category.id === 10
+      return this.category.serverId === 10
     },
     isDeserts () {
-      return this.category.id === 17
+      return this.category.serverId === 17
     },
     isCarbs () {
-      return this.category.id === 18
+      return this.category.serverId === 18
     },
     isPlants () {
-      return this.category.id === 4
+      return this.category.serverId === 4
     },
     isCookedFood () {
-      return this.category.id === 9
+      return this.category.serverId === 9
     },
     isMeat () {
-      return this.category.id === 1
+      return this.category.serverId === 1
     },
     isMiscellanious () {
-      return this.category.id === 7
+      return this.category.serverId === 7
     }
   },
   components: { },
