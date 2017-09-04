@@ -1,9 +1,9 @@
 <template>
   <div id="mobile-page">
     <img src="../../assets/images/logo-black.svg" class="logo">
-    <img src="../../assets/images/3-iphones.png" class="iphones">
+    <img src="../../assets/images/3-iphones.jpg" class="iphones">
     <h2>{{$t('mobile_page.title')}}</h2>
-    <a href="https://itunes.apple.com/fr/app/coach-nourriture-enceinte/id1148406816?&mt=8" target="_blank">
+    <a href="https://muxu.gift/enceinte-alimentation-app-store" target="_blank">
       <img src="../../assets/images/app-store-badge-black.svg" class="badge">
     </a>
   </div>
