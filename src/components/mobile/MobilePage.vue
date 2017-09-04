@@ -3,7 +3,7 @@
     <img src="../../assets/images/logo-black.svg" class="logo">
     <img src="../../assets/images/3-iphones.jpg" class="iphones">
     <h2>{{$t('mobile_page.title')}}</h2>
-    <a href="https://muxu.gift/alimentation-enceinte-app-store" target="_blank">
+    <a href="https://muxu.gift/alimentation-enceinte-app-store" target="_blank" rel="noopener">
       <img src="../../assets/images/app-store-badge-black.svg" class="badge">
     </a>
   </div>

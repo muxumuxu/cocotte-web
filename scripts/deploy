@@ -1,16 +1,17 @@
 #!/usr/bin/env sh
 
 git checkout master
-npm run build; surge -d cocotte-app.com -p dist
+git pull origin master
+npm run build; cp dist/index.html dist/200.html; surge -d cocotte-app.com -p dist
 
 git checkout enceinte-manger.com
-git merge master
-npm run build; surge -d enceinte-manger.com -p dist
+git pull origin enceinte-manger.com; git merge master
+npm run build; cp dist/index.html dist/200.html; surge -d enceinte-manger.com -p dist
 
 git checkout enceinte-alimentation.com
-git merge master
-npm run build; surge -d enceinte-alimentation.com -p dist
+git pull origin enceinte-alimentation.com; git merge master
+npm run build; cp dist/index.html dist/200.html; surge -d enceinte-alimentation.com -p dist
 
 git checkout alimentation-enceinte.com
-git merge master
-npm run build; surge -d alimentation-enceinte.com -p dist
+git pull origin alimentation-enceinte.com; git merge master
+npm run build; cp dist/index.html dist/200.html; surge -d alimentation-enceinte.com -p dist

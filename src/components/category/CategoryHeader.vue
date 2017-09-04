@@ -5,7 +5,7 @@
         <img src="../../assets/images/logo-black.svg">
       </router-link>
       <search-bar :gray-style="true" />
-      <a href="https://muxu.gift/alimentation-enceinte-app-store" target="_blank">
+      <a href="https://muxu.gift/alimentation-enceinte-app-store" target="_blank" rel="noopener">
         <img src="../../assets/images/app-store-badge.svg">
       </a>
     </header>
