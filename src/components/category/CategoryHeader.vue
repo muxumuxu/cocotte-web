@@ -31,7 +31,7 @@ export default {
   props: {
     showFilters: { type: Boolean },
     categoryName: { type: String },
-    categoryId: { type: Number },
+    categoryId: { type: String },
     categoryHeaderTitle: { type: String },
     selectedFilter: { type: String },
     onFilterChanged: { type: Function, default: () => {} }

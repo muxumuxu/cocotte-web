@@ -1,6 +1,6 @@
 <template>
   <div id="food-page">
-    <category-header :categoryName="category.name" :showFilters="false" :categoryId="parseInt($route.params.category_id)" />
+    <category-header :categoryName="category.name" :showFilters="false" :categoryId="$route.params.category_id" />
     <food-details :food="food" :category="category" />
     <banner-app v-if="!userHasCloseBanner" />
     <desktop-modal />
@@ -19,18 +19,19 @@ export default {
   components: { CategoryHeader, FoodDetails, BannerApp, DesktopModal },
   computed: {
     category () {
-      const categoryId = parseInt(this.$route.params.category_id)
-      const matched = this.categories.filter(cat => cat.id === categoryId)
-      if (matched.length > 0) {
-        return matched[0]
+      const categoryId = this.$route.params.category_id
+      const category = this.$store.getters.getCategoryById(categoryId)
+      if (category) {
+        return category
       }
       this.$router.push('/404')
     },
     food () {
-      const foodId = parseInt(this.$route.params.food_id)
-      const matched = this.category.foods.filter(food => food.id === foodId)
-      if (matched.length > 0) {
-        return matched[0]
+      const categoryId = this.$route.params.category_id
+      const foodId = this.$route.params.food_id
+      const food = this.$store.getters.getFoodById(categoryId, foodId)
+      if (food) {
+        return food
       }
       this.$router.push('/404')
     },

@@ -2,9 +2,16 @@
   <div id="play-video">
     <button class="play" v-on:click="playVideo"><img src="../../assets/images/pink-button.svg"></button>
     <p>{{$t('video')}}</p>
-    <div id="video-overlay">
+    <div id="video-overlay" v-if="displayVideo">
       <button v-on:click="closeVideo"><span class="close"></span></button>
-      <iframe src="https://player.vimeo.com/video/231192959?color=ff0079&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      <iframe
+        src="https://player.vimeo.com/video/231192959?color=ff0079&title=0&byline=0&portrait=0&autoplay=1"
+        style="position:absolute;top:0;left:0;width:100%;height:100%;"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen>
+      </iframe>
     </div>
   </div>
 </template>
@@ -12,16 +19,15 @@
 <script>
 export default {
   name: 'play-video',
+  data: () => ({ displayVideo: false }),
   computed: { },
   components: { },
   methods: {
     playVideo () {
-      const video = document.getElementById('video-overlay')
-      video.classList.add('play')
+      this.displayVideo = true
     },
     closeVideo () {
-      const video = document.getElementById('video-overlay')
-      video.classList.remove('play')
+      this.displayVideo = false
     }
   }
 }
@@ -60,10 +66,7 @@ export default {
     height: 100%;
     top: 0;
     left: 0;
-    display: none;
-    &.play {
-      display: block;
-    }
+    display: block;
     .close {
       position: absolute;
       top: 20px;

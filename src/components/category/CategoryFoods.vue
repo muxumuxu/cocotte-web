@@ -13,7 +13,7 @@ import FoodItem from '@/components/food/FoodItem'
 export default {
   name: 'category-foods',
   props: {
-    categoryId: { type: Number },
+    categoryId: { type: String },
     filterBy: { type: String }
   },
   computed: {
