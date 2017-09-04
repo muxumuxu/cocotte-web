@@ -1,7 +1,7 @@
 <template>
   <div id="download-app">
     <h2>{{bannerTitle}}</h2>
-    <a href="https://muxu.gift/enceinte-manger-app-store" target="_blank">
+    <a href="https://muxu.gift/enceinte-manger-app-store" target="_blank" rel="noopener">
       <img src="../../assets/images/app-store-badge-black.svg">
     </a>
   </div>
