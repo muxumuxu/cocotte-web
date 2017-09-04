@@ -4,7 +4,7 @@
       <router-link to="/">
         <img src="../../assets/images/logo-white.svg">
       </router-link>
-      <a href="https://muxu.gift/enceinte-alimentation-app-store" target="_blank">
+      <a href="https://muxu.gift/enceinte-alimentation-app-store" target="_blank" rel="noopener">
         <img src="../../assets/images/app-store-badge.svg">
       </a>
     </header>
