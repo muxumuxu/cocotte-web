@@ -26,7 +26,11 @@ export default {
   computed: {
     category () {
       const categoryId = parseInt(this.$route.params.id)
-      return this.categories.filter(cat => cat.id === categoryId)[0]
+      const matched = this.categories.filter(cat => cat.id === categoryId)
+      if (matched.length > 0) {
+        return matched[0]
+      }
+      this.$router.push('/404')
     },
     ...mapGetters({
       categories: 'categories',
