@@ -12,7 +12,8 @@ export default {
   components: { LandingFooter },
   computed: {
     isFooterEnabled () {
-      return this.$route.name !== 'MobilePage'
+      const pages = ['MobilePage', 'DownloadPage']
+      return pages.indexOf(this.$route.name) === -1
     }
   },
   mounted: function () {
