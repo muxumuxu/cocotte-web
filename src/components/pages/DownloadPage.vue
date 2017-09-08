@@ -3,10 +3,10 @@
     <img src="../../assets/images/logo-black.svg" class="logo">
     <img src="../../assets/images/3-iphones.jpg" class="iphones">
     <h2>{{$t('download_page.title')}}</h2>
-    <a href="https://muxu.gift/cocotte-app-app-store" target="_blank" rel="noopener">
+    <a href="https://muxu.gift/enceinte-alimentation-app-store" target="_blank" rel="noopener">
       <img src="../../assets/images/app-store-badge-black.svg" class="badge">
     </a>
-    <a href="https://muxu.gift/cocotte-app-google-play" target="_blank" rel="noopener" class="google-play">
+    <a href="https://muxu.gift/enceinte-alimentation-google-play" target="_blank" rel="noopener" class="google-play">
       <img src="../../assets/images/google-play-badge-black.svg">
     </a>
   </div>
