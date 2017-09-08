@@ -6,6 +6,7 @@ import AboutPage from '@/components/pages/AboutPage'
 import CategoryPage from '@/components/category/CategoryPage'
 import FoodPage from '@/components/food/FoodPage'
 import MobilePage from '@/components/mobile/MobilePage'
+import DownloadPage from '@/components/pages/DownloadPage'
 import ErrorPage from '@/components/pages/ErrorPage'
 
 Vue.use(Router)
@@ -42,6 +43,11 @@ const router = new Router({
       path: '/mobile',
       name: 'MobilePage',
       component: MobilePage
+    },
+    {
+      path: '/telecharger',
+      name: 'DownloadPage',
+      component: DownloadPage
     },
     {
       path: '*',
