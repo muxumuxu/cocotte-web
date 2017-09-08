@@ -6,6 +6,9 @@
     <a href="https://muxu.gift/enceinte-alimentation-app-store" target="_blank" rel="noopener">
       <img src="../../assets/images/app-store-badge-black.svg" class="badge">
     </a>
+    <a href="https://muxu.gift/enceinte-alimentation-google-play" target="_blank" rel="noopener" class="google-play">
+      <img src="../../assets/images/google-play-badge-black.svg">
+    </a>
   </div>
 </template>
 
@@ -38,6 +41,12 @@ export default {
   h2 {
     margin: 25px 0;
     color: black;
+  }
+  a {
+    display: block;
+    &.google-play {
+      margin-top: 10px;
+    }
   }
 }
 </style>
