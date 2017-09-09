@@ -11,7 +11,7 @@ import MeatImage from '@/assets/images/meat.svg'
 import CookedFoodImage from '@/assets/images/cooked_food.svg'
 import PlantsImage from '@/assets/images/plants.svg'
 
-const imageForCategory = (category) => {
+export const imageForCategory = (category) => {
   switch (category.serverId) {
     case 1:
       return MeatImage
@@ -42,4 +42,33 @@ const imageForCategory = (category) => {
   }
 }
 
-export default imageForCategory
+export const colorForCategory = (category) => {
+  switch (category.serverId) {
+    case 1:
+      return '#FFDA3A'
+    case 3:
+      return '#FFDA3A'
+    case 4:
+      return '#FFDA3A'
+    case 5:
+      return '#484291'
+    case 6:
+      return '#007CFF'
+    case 9:
+      return '#9F57B6'
+    case 10:
+      return '#FFDA3A'
+    case 12:
+      return '#99D22A'
+    case 15:
+      return '#99D22A'
+    case 16:
+      return '#9F57B6'
+    case 17:
+      return '#99D22A'
+    case 18:
+      return '#484291'
+    default:
+      return '#99D22A'
+  }
+}
