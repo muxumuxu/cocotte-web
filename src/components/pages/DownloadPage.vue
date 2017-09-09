@@ -1,8 +1,8 @@
 <template>
-  <div id="mobile-page">
+  <div id="download-page">
     <img src="../../assets/images/logo-black.svg" class="logo">
     <img src="../../assets/images/3-iphones.jpg" class="iphones">
-    <h2>{{$t('mobile_page.title')}}</h2>
+    <h2>{{$t('download_page.title')}}</h2>
     <a href="https://muxu.gift/cocotte-app-app-store" target="_blank" rel="noopener">
       <img src="../../assets/images/app-store-badge-black.svg" class="badge">
     </a>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-  name: 'mobile-page',
+  name: 'download-page',
   computed: { },
   components: { },
   methods: { }
@@ -22,7 +22,7 @@ export default {
 </script>
 
 <style lang="scss">
-#mobile-page {
+#download-page {
   padding: 60px 35px;
   text-align: center;
   img {
@@ -32,7 +32,7 @@ export default {
       max-width: 100%;
     }
     &.iphones {
-      max-width: 100%;
+      width: 307px;
     }
     &.badge {
       opacity: 1;

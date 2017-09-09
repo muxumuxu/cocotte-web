@@ -1,6 +1,9 @@
 <template>
   <div id="download-app">
     <h2>{{bannerTitle}}</h2>
+    <a href="https://muxu.gift/cocotte-app-google-play" target="_blank" rel="noopener" class="google-play">
+      <img src="../../assets/images/google-play-badge-black.svg">
+    </a>
     <a href="https://muxu.gift/cocotte-app-app-store" target="_blank" rel="noopener">
       <img src="../../assets/images/app-store-badge-black.svg">
     </a>
@@ -22,6 +25,9 @@ export default {
 	margin: 20px 0 0 25px;
   h2 {
     margin-bottom: 20px;
+  }
+  a.google-play {
+    margin-right: 10px;
   }
 }
 </style>
