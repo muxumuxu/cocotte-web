@@ -8,7 +8,10 @@ export default {
     title: 'Créez votre liste de favoris partageable à tout moment en téléchargeant l’application iPhone.'
   },
   mobile_page: {
-    title: 'Pour plus de confort, téléchargez cocotte sur votre mobile. Le site n’est disponible que sur ordinateur.'
+    title: 'Pour plus de confort, téléchargez Cocotte sur votre mobile. Le site n’est disponible que sur ordinateur.'
+  },
+  download_page: {
+    title: 'Téléchargez l’application Cocotte sur votre mobile pour l’emporter partout avec vous.'
   },
   category: {
     input_search: 'Rechercher un aliment',
