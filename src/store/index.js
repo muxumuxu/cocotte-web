@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import data from './foods.json'
 import _ from 'lodash'
-import imageForCategory from './category_helper'
+import { imageForCategory } from './category_helper'
 import axios from 'axios'
 
 const LOAD_FOODS = 'LOAD_FOODS'
