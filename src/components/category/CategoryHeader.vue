@@ -5,9 +5,14 @@
         <img src="../../assets/images/logo-black.svg">
       </router-link>
       <search-bar :gray-style="true" />
-      <a href="https://muxu.gift/alimentation-enceinte-app-store" target="_blank" rel="noopener">
-        <img src="../../assets/images/app-store-badge.svg">
-      </a>
+      <div>
+        <a href="https://muxu.gift/alimentation-enceinte-google-play" target="_blank" rel="noopener" class="google-play">
+          <img src="../../assets/images/google-play-badge.svg">
+        </a>
+        <a href="https://muxu.gift/alimentation-enceinte-app-store" target="_blank" rel="noopener">
+          <img src="../../assets/images/app-store-badge.svg">
+        </a>
+      </div>
     </header>
     <div class="wrapper">
       <router-link v-if="categoryName" :to="`/categories/${categoryId}`">
