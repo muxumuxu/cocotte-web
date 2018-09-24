@@ -49,6 +49,7 @@ export default {
     about: 'À propos',
     press: 'Kit presse',
     team: 'Contacter l\'équipe',
+    privacy: 'Politique de confidentialité',
     with_love: 'Fait avec ❤️ par l’équipe de Cocotte.'
   }
 }

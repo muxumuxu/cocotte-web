@@ -4,6 +4,7 @@
       <router-link to="/about">{{$t('footer.about')}}</router-link>
       <a href="https://www.dropbox.com/sh/w8n3d9dbs5li0zh/AADqT2FKSrC3KiEQlhL1ulzHa?dl=0" target="_blank" rel="noopener">{{$t('footer.press')}}</a>
       <a href="mailto:bonjour@cocotte-app.com">{{$t('footer.team')}}</a>
+			<a href="https://www.iubenda.com/privacy-policy/75436443/legal" target="_blank">{{$t('footer.privacy')}}</a>
       <div class="social">
         <a href="https://www.facebook.com/CocotteApp/" target="_blank" rel="noopener"><img src="../../assets/images/facebook-icon.svg"></a>
         <a href="https://www.instagram.com/cocotteapp/" target="_blank" rel="noopener"><img src="../../assets/images/instagram-icon.svg"></a>
