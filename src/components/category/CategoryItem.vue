@@ -89,37 +89,37 @@ export default {
     }
     &.dairy {
       background: #484291;
-    },
+    }
     &.vege_fruits {
       background: #FFDA3A;
     }
     &.fish_seafood {
       background: #007CFF;
-    },
+    }
     &.condiments {
       background: #9F57B6;
-    },
+    }
     &.drinks {
       background: #99D22A;
-    },
+    }
     &.deli {
       background: #FFDA3A;
-    },
+    }
     &.deserts {
       background: #99D22A;
-    },
+    }
     &.carbs {
       background: #484291;
-    },
+    }
     &.plants {
       background: #FFDA3A;
-    },
+    }
     &.cooked_food {
       background: #9F57B6;
-    },
+    }
     &.meat {
       background: #FFDA3A;
-    },
+    }
     &.miscellanious {
       background: #99D22A;
     }
