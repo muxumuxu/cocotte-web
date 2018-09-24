@@ -5,7 +5,7 @@ export default {
     title: 'Cocotte a son appli mobile, qui fonctionne avec ou sans connexion. Téléchargez-la pour l\'avoir tout le temps avec vous.'
   },
   modal_desktop: {
-    title: 'Créez votre liste de favoris partageable à tout moment en téléchargeant l’application iPhone.'
+    title: 'Créez votre liste de favoris partageable à tout moment en téléchargeant l’application mobile.'
   },
   mobile_page: {
     title: 'Pour plus de confort, téléchargez Cocotte sur votre mobile. Le site n’est disponible que sur ordinateur.'
@@ -32,7 +32,7 @@ export default {
   },
   error_page: {
     title: 'Cot cot ? Cot cooott ! 🐣',
-    message: 'Oups ! Soit notre site rencontre un problème technique, soit vous avez recherché “pizza à l’ananas”. Dans tous les cas l’accueil est par là.'
+    message: 'Oups ! Cette page n\'existe pas.'
   },
   about: {
     title: 'À propos',
